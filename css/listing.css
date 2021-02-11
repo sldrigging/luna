@@ -1,0 +1,45 @@
+.spec-sheet_item{
+    font-size: 16px;
+}
+.spec-sheet_name.spec-sheet_value{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.scroll-animated {
+    animation:slide-down 0.7s;  
+}                  
+.fixscroll-animateded {                  
+    transform: rotate(360deg);      
+}
+.spec-sections{
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin: 20px 0;
+    border-top: 4px solid #00be00;
+}
+.spec-title {
+    font-size: 22px;
+    color: gray;
+    font-weight: 800;
+}
+.product-id{
+    display: block;
+}
+.radio-option span{
+    display:none;
+}
+.radio-option img{
+    display:none;
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}

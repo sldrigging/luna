@@ -1,0 +1,63 @@
+img {
+    max-width: 100%; 
+    height: auto;
+  }
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 5px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+.card p {
+font-size: 14px;
+padding: 0px 10px;
+}
+.sticky-logo{
+    max-width: 210px;
+    padding: 0px 10px;
+}
+
+@media only screen and (max-width: 830px) {
+    .card{
+        margin: 10px;
+    }
+    .card p {
+        font-size: 12px;
+        padding: 0px 5px;
+        }
+        .no-bull-div {
+            text-align: center;
+        }
+        .no-gimmicks-div p {
+           text-align: center;
+           font-size: 16px!important;
+        }
+}
+
+// Footer
+#extrapages li{
+    text-align: center;
+}
+.eriggingpromiseimg{
+    width: 700px;
+    height: auto;
+}
+.no-bull-div {
+	border-right: 5px solid #ffffff;
+	text-align: right;
+}
+
+.no-gimmicks-div p {
+    font-size: 1.5vw;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+.trustpilot-section{
+    padding: 3%;
+    border-radius: 15px;
+    background-color: #344c62;
+    margin: 1%;
+}
