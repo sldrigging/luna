@@ -743,6 +743,8 @@
               </ul>
             </div>
           </div>
+
+         
           <!-- badges -->
           <div class="info">[extra_field_9]</div>
 
@@ -1175,35 +1177,7 @@
               }
             </script>
             <!--END: previouslybought-->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script>
-             // function mySizeFunction(vakue){
-               // var id=document.querySelector('.radio-option p').innerText;
-               
-              //}
-              // $(document).ready(function(){
-                
-              //   $("label").click(function(){
-              //     var id=document.querySelector('.radio-option p').innerText;
-              //     alert(id);
-              //   });
-              // });
-          
-            //   function mySizeFunction(valus){
-            //   //var id=document.querySelector('.radio-option p').innerText;
-            //   var idk = "label"+"#"+valus;
-            //   console.log(idk);
-            //   $(idk).click(function(){
-                
-            //   var element = document.querySelector(".radio-option span span").innerHTML;
-            //   var link = "_p_"+element+".html";
-            //   $(location).attr("href", link);
-            //      });
-            //  }
-               
-
-             
-             </script>
+           
             
             <!--START: pricing-->
             <div
@@ -1510,7 +1484,7 @@
                   />
                 
                 
-         
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
                     <script defer language="javascript" type="text/javascript"> 
                           $(document).ready(function(){
@@ -2232,6 +2206,7 @@
             </div>
 
             <div class="clear"></div>
+           
             <!--START: extrafields-->
             <div class="extrafieldsBlock" style="display: block">
               <h3 style="margin: 12px 0; font-weight: 900">Features</h3>
@@ -2467,7 +2442,7 @@
       
       </div>
       <!-- dare -->
-      <div class="container">
+      <div class="container" id="spec">
         <div class="col-md-12 spec-sections">
           <p class="spec-title">[product_extrafield6]</p> 
           <!-- Spec Sheet -->
@@ -2478,8 +2453,6 @@
           <!-- Description -->
           <div class="item" itemprop="description">[extended_description]</div>
         </div>
-      </div>
-      <div class="container">
         <div class="col-md-12 spec-sections">
           <p class="spec-title">[product_extrafield8]</p>
           <!-- Special Instructions -->
@@ -3131,11 +3104,11 @@
 <!--END: CATEGORY_FOOTER-->
 
 <!--START: template_scripts-->
-<script src="/assets/templates/elearning-core/js/OrderShipBy.js"></script>
+<script src="/assets/templates/luna-core/js/OrderShipBy.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js" integrity="sha256-OVk2fwTRcXYlVFxr/ECXsakqelJbOg5WCj1dXSIb+nU=" crossorigin="anonymous"></script> -->
 <script
   type="text/javascript"
-  src="/assets/templates/elearning-core/js/luxon.min.js"
+  src="/assets/templates/luna-core/js/luxon.min.js"
 ></script>
 <script
   type="text/javascript"
@@ -3147,11 +3120,11 @@
 ></script>
 <script
   type="text/javascript"
-  src="/assets/templates/elearning-core/js/luna.js"
+  src="/assets/templates/luna-core/js/luna.js"
 ></script>
 <!-- <script
 type="text/javascript"
-src="/assets/templates/elearning-core/js/luxon.js"
+src="/assets/templates/luna-core/js/luxon.js"
 ></script> -->
 
 <script>
@@ -3220,43 +3193,7 @@ src="assets/templates/common-core/lib/countdown.js"
 
 
 <!--END: Main Nav no-scroll-->
-<!--START: Badges-->
-<script>
-  $(document).ready(function () {
-    var badgesImage = document.getElementsByClassName("badge-button");
-    var orderBadges = [];
-    for (var t = 0; t < badgesImage.length; t++) {
-      var badgeMove = document.getElementsByClassName("badge-button")[0];
-      badgeMoveClasses = badgeMove.classList;
-      var getNumber = badgeMoveClasses.item(1);
-      //getNumber.parseInt();
-      orderBadges.push(getNumber);
-      $(badgeMove).insertAfter("#badges-div");
 
-      var badgeSort = document.getElementsByClassName(getNumber);
-      //orderBadges.push(badgeSort);
-    }
-    function displayBadges() {
-      for (var z = 0; z < badgesImage.length; z++) {
-        var badgeDisplay = document.getElementsByClassName("badge-button")[z];
-        $(badgeDisplay).css("opacity", "1");
-        $(badgeDisplay).css("display", "inline-flex");
-        $(badgeDisplay).css("padding", "4px");
-      }
-    }
-    orderBadges.sort(function (a, b) {
-      return b - a;
-    });
-
-    orderBadges.forEach(putInOrder);
-    displayBadges();
-    function putInOrder(value) {
-      var element = document.getElementsByClassName(value)[0];
-      $(element).insertAfter("#badges-div");
-    }
-  });
-</script>
-<!--END: Badges-->
 <script>
   var OriginalImage = jQuery("#listing_main_image_link").attr("href") ?? "";
   function SelectSwatch(id) {
@@ -3323,7 +3260,7 @@ src="assets/templates/common-core/lib/countdown.js"
     ReviewSortingChange(0, intOffSetNext);
   }
 
-  <!--START: previouslybought_scripts-->
+  // START: previouslybought_scripts
   function checkPrevPurch(userId, caId) {
     jQuery.ajax({
       url: "ajaxPrevPurch.asp",
@@ -3414,47 +3351,6 @@ src="assets/templates/common-core/lib/countdown.js"
     </div>
   </div>
 </div>
-
-<style>
-  .embed-responsive-bycustom {
-    �padding-bottom: 85%;
-  }
-</style>
-
-<!--START: template_styles-->
-<link
-  rel="stylesheet"
-  href="assets/templates/[template]/css/listing.css"
-  type="text/css"
-  media="screen"
-/>
-<link
-  rel="stylesheet"
-  href="/assets/templates/common-core/lib/magiczoomplus/magiczoomplus.css"
-  type="text/css"
-  media="screen"
-/>
-<link
-  rel="stylesheet"
-  href="/assets/templates/common-core/lib/flexslider/flexslider.css"
-  type="text/css"
-  media="screen"
-/>
-<link
-  rel="stylesheet"
-  href="/assets/templates/common-core/lib/responsiveTabs/css/responsive-tabs.css"
-  type="text/css"
-  media="screen"
-/>
-<link
-  rel="stylesheet"
-  href="/assets/templates/common-core/css/listing.css"
-  type="text/css"
-  media="screen"
-/>
-<script src="/assets/templates/elearning-core/js/content-data.js"></script>
-
-<!--END: template_styles-->
 <div
 class="modal fade"
 id="myModalBadge"
@@ -3492,6 +3388,47 @@ aria-hidden="true"
   </div>
 </div>
 </div>
+<style>
+  .embed-responsive-bycustom {
+    �padding-bottom: 85%;
+  }
+</style>
+
+<!--START: template_styles-->
+<link
+  rel="stylesheet"
+  href="assets/templates/[template]/css/listing.css"
+  type="text/css"
+  media="screen"
+/>
+<link
+  rel="stylesheet"
+  href="/assets/templates/common-core/lib/magiczoomplus/magiczoomplus.css"
+  type="text/css"
+  media="screen"
+/>
+<link
+  rel="stylesheet"
+  href="/assets/templates/common-core/lib/flexslider/flexslider.css"
+  type="text/css"
+  media="screen"
+/>
+<link
+  rel="stylesheet"
+  href="/assets/templates/common-core/lib/responsiveTabs/css/responsive-tabs.css"
+  type="text/css"
+  media="screen"
+/>
+<link
+  rel="stylesheet"
+  href="/assets/templates/common-core/css/listing.css"
+  type="text/css"
+  media="screen"
+/>
+<script src="/assets/templates/luna-core/js/content-data.js"></script>
+
+<!--END: template_styles-->
+
 <style>
   .extrafieldsBlock {
     padding: 10px;

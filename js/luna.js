@@ -1,10 +1,17 @@
 //hide extrafield with no value
-$(document).ready(function() {
-	//if ($('.spec-sections > .info').is(':empty')){
-      if ( $('.spec-sections.info').children().length > 0 ) {
-       $('.spec-sections.info').parent().css({"display": "none"});
-	}
-});
+console.log('hi from luna');
+$(document).ready(function(){
+var doc = document.querySelectorAll('.col-md-12.spec-sections').length;
+console.log('doc',doc);
+for (var i = 0; i < doc; i++) {
+  var isEmpty = document.getElementById('.col-md-12.spec-sections').innerHTML;
+  if (isEmpty === null) {
+    console.log('empty');
+  }     
+}
+})
+//document.querySelector(".col-md-12.spec-sections").children[1].innerHTML;
+
 
 //product page sticky nav
 window.onscroll = function () {

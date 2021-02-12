@@ -18,6 +18,12 @@
     margin: 20px 0;
     border-top: 4px solid #00be00;
 }
+.badges{
+    display: inline-flex;
+}
+.badges div{
+    padding: 0.4%;
+}
 .spec-title {
     font-size: 22px;
     color: gray;
