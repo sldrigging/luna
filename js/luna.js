@@ -1,17 +1,12 @@
 //hide extrafield with no value
-console.log('hi from luna');
 $(document).ready(function(){
-var doc = document.querySelectorAll('.col-md-12.spec-sections').length;
-console.log('doc',doc);
+var doc = document.querySelectorAll('.col-md-12.spec-sections > div.info').length;
 for (var i = 0; i < doc; i++) {
-  var isEmpty = document.getElementById('.col-md-12.spec-sections').innerHTML;
-  if (isEmpty === null) {
-    console.log('empty');
-  }     
+  if ( $('.col-md-12.spec-sections > div.info')[i].children.length == 0 ) {
+    $('.col-md-12.spec-sections > div.info').eq(i).parent().hide();
+}
 }
 })
-//document.querySelector(".col-md-12.spec-sections").children[1].innerHTML;
-
 
 //product page sticky nav
 window.onscroll = function () {

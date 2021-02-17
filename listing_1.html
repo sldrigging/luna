@@ -1486,31 +1486,31 @@
                 
                   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-                    <script defer language="javascript" type="text/javascript"> 
+                    <script defer language="javascript" type="text/javascript">                       
+     
                           $(document).ready(function(){
                             $("#[value]").click(function(){
-                              var linka = $(this).find('span:eq(1)').text(); 
-                                  //console.log('linka',linka);
-                           //var element = document.querySelector(".radio-option span span").innerHTML;
-                           //var linkb= linka.innerHTML
-                           //console.log('linkb',linkb);
-                            var linkc = "_p_"+linka+".html";
-                              $(location).attr("href", linkc);
-                        //console.log('linkc',linkc);
-                          
-                              });
+                              var link = $(this).find('span:eq(0)').text();
+                              var navLink = $(this).find('span:eq(1)').text();
+                              if (link.startsWith('Catalog')){                             
+                                var finalNavLink = "_c_"+navLink+".html"; 
+                              $(location).attr("href", finalNavLink);  
+                              }
+                              else {
+                                var finalNavLink = "_p_"+navLink+".html";
+                                $(location).attr("href", finalNavLink);  
+                              }
+                                });  
                           });
-                      
                       </script>
-
 
                   <label
                     class="radio-option"
                     data-group="[oname]"
-                    title="[feature]"
                     id="[value]"  onclick="getSize[value]();"
                     
                   >
+<!--           title="[feature]" -->
                   <p style="display:none">[value]</p>
                     <!--START: radio_imagepath-->
                     <img
@@ -3291,11 +3291,26 @@ src="assets/templates/common-core/lib/countdown.js"
 <!--END: template_scripts-->
 
 
+
+});
+<script> 
+var q=$("label.radio-option");
+var w=q.length;
+var e = w-1;
+$('label.radio-option')[e].classList.add("catalog");
+//$('label.radio-option')[e].parent().style.display = "block";
+var r =$('label.radio-option')[e];
+var catParentDiv = r.parentElement;
+catParentDiv.style.display="block";
+catParentDiv.style.marginTop="1%";
+   //catParentDiv.prepend("<div class='obt-label' style='margin-bottom:10px'><label class='label'>The Catalog</label></div></h4>")
+
+</script>
+
+
  
 <!--START: ModalVideoGallery-->
 <!--Modal: Name-->
-
-
 <div
   class="modal fade"
   id="modalVM"
@@ -3462,4 +3477,12 @@ aria-hidden="true"
   .ctooltip:hover .ctooltiptext {
     visibility: visible;
   }
+  .catalog{
+    background-color: #0c172b!important;
+    color:white!important;
+    border:2px solid #00be00!important;
+    font-size: 20px!important;
+    padding: 3px;
+  }
+  
 </style>

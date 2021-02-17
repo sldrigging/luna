@@ -35,6 +35,9 @@
 .radio-option span{
     display:none;
 }
+.catalog span:nth-child(1){
+display:none;
+}
 .radio-option img{
     display:none;
 }
