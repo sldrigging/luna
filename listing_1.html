@@ -1508,7 +1508,7 @@
                     class="radio-option"
                     data-group="[oname]"
                     id="[value]"  onclick="getSize[value]();"
-                    
+                    title="[feature]"
                   >
 <!--           title="[feature]" -->
                   <p style="display:none">[value]</p>
@@ -3305,6 +3305,23 @@ catParentDiv.style.display="block";
 catParentDiv.style.marginTop="1%";
    //catParentDiv.prepend("<div class='obt-label' style='margin-bottom:10px'><label class='label'>The Catalog</label></div></h4>")
 
+
+   //Start: script to highlight options
+ 	
+						var z= _3d_item.catalogid;
+          //   var dao = document.querySelectorAll('label.radio-option').length;
+          //   for (var i = 0; i < dao; i++) {
+          //   if ( $('label.radio-option').find('span:nth-child(1)')[i].innerHTML == z){
+          //     $('label.radio-option').find('span:nth-child(1)')[i].parent().style.backgroundColor="blue";
+
+          //     console.log('FOUND');
+          // }
+          // }
+          var selected = $(".radio-option span").filter(function() { return ($(this).text().indexOf(z) > -1) });
+selected.parent().parent().addClass('selectedcat');
+						
+						
+	
 </script>
 
 
