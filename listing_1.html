@@ -2453,6 +2453,14 @@
           <!-- Description -->
           <div class="item" itemprop="description">[extended_description]</div>
         </div>
+
+        <div class="col-md-12 spec-sections">
+          <p class="spec-title">[product_extrafield7]</p>
+        
+          <div class="info">[extra_field_7]</div>
+        
+        </div>
+        
         <div class="col-md-12 spec-sections">
           <p class="spec-title">[product_extrafield8]</p>
           <!-- Special Instructions -->
@@ -2481,6 +2489,139 @@
             >
           </div>
           <!-- End TrustBox widget -->
+        </div>
+         <!-- Q&A -->
+        <div class="col-md-12 spec-sections">
+          <!--START: qa_tab-->
+        <div id="tab-5" >
+          <!--START: qa_link-->
+          <div class="qa_link button right">
+            <a href="#" data-toggle="modal" data-target="#qalist-modal"
+              >[productqa_viewall]</a
+            >
+            <div
+              id="qalist-modal"
+              class="modal fade"
+              tabindex="-1"
+              role="dialog"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">[productqa_header]</h4>
+                  </div>
+                  <div class="modal-body">
+                    <iframe
+                      src="/productqa.asp?action=listallqa&catalogid=[catalogid]"
+                      aria-label="iframe"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END: qa_link-->
+
+          <div class="qaBlock" itemscope itemtype="https://schema.org/FAQPage">
+            <!--START: qa_list-->
+            <div
+              class="qa_list"
+              itemscope=""
+              itemprop="mainEntity"
+              itemtype="https://schema.org/Question"
+            >
+              <div class="qa_question">
+                <h4 class="q">
+                  <strong>[productqa_q]</strong>
+                  <span id="question[qa_id]" itemprop="name">[question]</span>
+                </h4>
+                <div class="q-author">
+                  <em>
+                    [productqa_question-submit-by]: <span>[q_user_name]</span>
+                    - [q_date_added]
+                  </em>
+                </div>
+              </div>
+
+              <!--START: qa_answers-->
+              <div
+                class="qa_answers"
+                itemscope=""
+                itemprop="acceptedAnswer"
+                itemtype="https://schema.org/Answer"
+              >
+                <div class="qa_answer">
+                  <strong>[productqa_a]</strong>
+                  <span itemprop="text">[answer]</span>
+                </div>
+                <!--START: qa_allowratings-->
+                <div class="qa_allowratings">
+                  [productqa_answer-helpful]&nbsp;
+                  <input
+                    type="button"
+                    class="btn btnYes btn-default"
+                    value="[productqa_helpyes]"
+                    onclick="updateQAStats('[ans_id]',[a_id],1)"
+                  />
+                  <input
+                    type="button"
+                    class="btn btnNo btn-default"
+                    value="[productqa_helpno]"
+                    onclick="updateQAStats('[ans_id]',[a_id],-1)"
+                  />
+                  <em
+                    ><strong
+                      ><span id="spn[a_id]"
+                        >[a_helpful]&nbsp;[productqa_of]&nbsp;[a_votes]</span
+                      ></strong
+                    >&nbsp;[productqa_found-helpful]</em
+                  >
+                </div>
+                <!--END: qa_allowratings-->
+                <div class="ans-author">
+                  <em
+                    >[productqa_answer-submit-by]:
+                    <span>[a_user_name] ([a_date_added])</span></em
+                  >
+                </div>
+              </div>
+              <!--END: qa_answers-->
+              <!--START: qa_noanswers-->
+              <div class="qa_noanswers">[productqa_no-answers]</div>
+              <!--END: qa_noanswers-->
+
+              <div class="clear"></div>
+              <!--START: qa_allowuserresponse-->
+              <div class="button text-right">
+                <a
+                  href="#"
+                  class="qa-answer-btn btn btn-default"
+                  data-question="[qa_id]"
+                  >[productqa_submit-answer]
+                  <span class="icon-angle-right"></span
+                ></a>
+              </div>
+              <!--END: qa_allowuserresponse-->
+              <div class="clear"></div>
+            </div>
+            <!--END: qa_list-->
+            <div class="button text-right">
+              <a href="#" class="qaLink btn btn-primary">
+                <!-- <i class="icon-help-circled" role="presentation"></i> -->
+                [productqa_newquestion]</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--END: qa_tab-->
         </div>
       </div>
       <!--START: tabs-->
@@ -2524,6 +2665,7 @@
           <!--END: extra_field_13-->
         </ul>
 
+        <!--START: Special Instructions-->
         <div id="tab-1">
           <div class="info">[extra_field_6]</div>
         </div>
@@ -2787,145 +2929,14 @@
           <!--END: LoadMoreButton-->
         </div>
         <!--END: reviews-->
-        <!--START: qa_tab-->
-        <div id="tab-5" style="display: none">
-          <!--START: qa_link-->
-          <div class="qa_link button right">
-            <a href="#" data-toggle="modal" data-target="#qalist-modal"
-              >[productqa_viewall]</a
-            >
-            <div
-              id="qalist-modal"
-              class="modal fade"
-              tabindex="-1"
-              role="dialog"
-            >
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title">[productqa_header]</h4>
-                  </div>
-                  <div class="modal-body">
-                    <iframe
-                      src="/productqa.asp?action=listallqa&catalogid=[catalogid]"
-                      aria-label="iframe"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--END: qa_link-->
-
-          <div class="qaBlock" itemscope itemtype="https://schema.org/FAQPage">
-            <!--START: qa_list-->
-            <div
-              class="qa_list"
-              itemscope=""
-              itemprop="mainEntity"
-              itemtype="https://schema.org/Question"
-            >
-              <div class="qa_question">
-                <h4 class="q">
-                  <strong>[productqa_q]</strong>
-                  <span id="question[qa_id]" itemprop="name">[question]</span>
-                </h4>
-                <div class="q-author">
-                  <em>
-                    [productqa_question-submit-by]: <span>[q_user_name]</span>
-                    - [q_date_added]
-                  </em>
-                </div>
-              </div>
-
-              <!--START: qa_answers-->
-              <div
-                class="qa_answers"
-                itemscope=""
-                itemprop="acceptedAnswer"
-                itemtype="https://schema.org/Answer"
-              >
-                <div class="qa_answer">
-                  <strong>[productqa_a]</strong>
-                  <span itemprop="text">[answer]</span>
-                </div>
-                <!--START: qa_allowratings-->
-                <div class="qa_allowratings">
-                  [productqa_answer-helpful]&nbsp;
-                  <input
-                    type="button"
-                    class="btn btnYes btn-default"
-                    value="[productqa_helpyes]"
-                    onclick="updateQAStats('[ans_id]',[a_id],1)"
-                  />
-                  <input
-                    type="button"
-                    class="btn btnNo btn-default"
-                    value="[productqa_helpno]"
-                    onclick="updateQAStats('[ans_id]',[a_id],-1)"
-                  />
-                  <em
-                    ><strong
-                      ><span id="spn[a_id]"
-                        >[a_helpful]&nbsp;[productqa_of]&nbsp;[a_votes]</span
-                      ></strong
-                    >&nbsp;[productqa_found-helpful]</em
-                  >
-                </div>
-                <!--END: qa_allowratings-->
-                <div class="ans-author">
-                  <em
-                    >[productqa_answer-submit-by]:
-                    <span>[a_user_name] ([a_date_added])</span></em
-                  >
-                </div>
-              </div>
-              <!--END: qa_answers-->
-              <!--START: qa_noanswers-->
-              <div class="qa_noanswers">[productqa_no-answers]</div>
-              <!--END: qa_noanswers-->
-
-              <div class="clear"></div>
-              <!--START: qa_allowuserresponse-->
-              <div class="button text-right">
-                <a
-                  href="#"
-                  class="qa-answer-btn btn btn-default"
-                  data-question="[qa_id]"
-                  >[productqa_submit-answer]
-                  <span class="icon-angle-right"></span
-                ></a>
-              </div>
-              <!--END: qa_allowuserresponse-->
-              <div class="clear"></div>
-            </div>
-            <!--END: qa_list-->
-            <div class="button text-right">
-              <a href="#" class="qaLink btn btn-primary">
-                <!-- <i class="icon-help-circled" role="presentation"></i> -->
-                [productqa_newquestion]</a
-              >
-            </div>
-          </div>
-        </div>
-        <!--END: qa_tab-->
+       
         <!--START: extra_field_6_tab-->
         <div id="tab-6" style="display: none">
           <div class="item" itemprop="description">[extended_description]</div>
         </div>
         <!--END: extra_field_6_tab-->
         <!--START: extra_field_7_tab-->
-        <div id="tab-7" style="display: none">
-          <div class="info">[extra_field_7]</div>
-        </div>
+       
         <!--END: extra_field_7_tab-->
         <!--START: extra_field_8_tab-->
         <div id="tab-8" style="display: none">
@@ -3294,37 +3305,21 @@ src="assets/templates/common-core/lib/countdown.js"
 
 });
 <script> 
-var q=$("label.radio-option");
-var w=q.length;
-var e = w-1;
-$('label.radio-option')[e].classList.add("catalog");
-//$('label.radio-option')[e].parent().style.display = "block";
-var r =$('label.radio-option')[e];
-var catParentDiv = r.parentElement;
+//Start: script to style CATALOG option 
+var options=$("label.radio-option");
+var len=options.length;
+var num = len-1;
+$('label.radio-option')[num].classList.add("catalog");
+var catOpt =$('label.radio-option')[num];
+var catParentDiv = catOpt.parentElement;
 catParentDiv.style.display="block";
 catParentDiv.style.marginTop="1%";
-   //catParentDiv.prepend("<div class='obt-label' style='margin-bottom:10px'><label class='label'>The Catalog</label></div></h4>")
 
-
-   //Start: script to highlight options
- 	
-						var z= _3d_item.catalogid;
-          //   var dao = document.querySelectorAll('label.radio-option').length;
-          //   for (var i = 0; i < dao; i++) {
-          //   if ( $('label.radio-option').find('span:nth-child(1)')[i].innerHTML == z){
-          //     $('label.radio-option').find('span:nth-child(1)')[i].parent().style.backgroundColor="blue";
-
-          //     console.log('FOUND');
-          // }
-          // }
-          var selected = $(".radio-option span").filter(function() { return ($(this).text().indexOf(z) > -1) });
-selected.parent().parent().addClass('selectedcat');
-						
-						
-	
+//Start: script to highlight options 	
+var z= _3d_item.catalogid;          
+var selected = $(".radio-option span").filter(function() { return ($(this).text().indexOf(z) > -1) });
+selected.parent().parent().addClass('selectedcat');	
 </script>
-
-
  
 <!--START: ModalVideoGallery-->
 <!--Modal: Name-->
@@ -3454,6 +3449,12 @@ aria-hidden="true"
 <link
   rel="stylesheet"
   href="/assets/templates/common-core/css/listing.css"
+  type="text/css"
+  media="screen"
+/>
+<link
+  rel="stylesheet"
+  href="/assets/templates/luna-core/css/main.css"
   type="text/css"
   media="screen"
 />

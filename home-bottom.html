@@ -2,20 +2,19 @@
 <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
     <div class="row align-items-center" style="background-color: #04192c; margin: 5% 0%; padding:0px">
       
-      <div class="col-sm-6" style="padding: 2.5%; "><br>
+      <div class=" col-md-6" style="padding: 2.5%; "><br>
         <p class="dark-title">
             About Us</p>
-        <p style="color: white; flex-wrap: nowrap; font-size:16px">
-  
+        <p class="about-us">  
             Our mission is simple: deliver top quality parts to our customers fast. From the heart of the marine rigging industry in New Orleans, E-Rigging offers over 80 years of combined experience in doing just that.
-            <br>
+            <br><br>
             To accomplish this we use industry leading pick pack and ship warehouse management technology to process your orders quickly and correctly. Whether its parts we made in-house or sourced & stocked, our priority is to make ordering parts the easy part of your project.
-            <br>
+            <br><br>
             No bull. No tricks. Just a simple devotion to service and a nerdy obsession (check out our DIY section) with rigging served from the Big Easy.</p>
   <a href="/about">
         <button class="btn-inverse" aria-label="About us">Learn More</button></a>
       </div>
-      <div class="col-sm-6 about">
+      <div class=" about col-md-6">
     </div>
     </div>
   </div>
@@ -23,10 +22,16 @@
 
   
 <style>
-  
+
+
+  .about-us{
+    color: white; 
+    flex-wrap: nowrap; 
+    font-size:16px;
+  }
     .about {
       padding: 0px;
-      min-height: 400px;
+      min-height: 480px;
       background: url(/cdn-cgi/image/f=auto/assets/templates/luna-core/images/home/about.jpg) no-repeat;
       background-size: cover;
     }
@@ -38,12 +43,20 @@
       color: white; 
       font-weight: 600;
     }
-   
+    @media only screen and (max-width: 1280px) and (min-width: 700px) {
+    /* ipad */
+    .featured p {
+        font-size: 14px;
+      }
+  }
     @media only screen and (max-width: 600px) {
       /* mobile */
       .featured p {
         font-size: 12px;
       }
+      .about-us{
+        font-size: 12px;
+  }
       .dark-title{
       font-size: 25px; 
     }
