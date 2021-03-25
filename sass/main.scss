@@ -10,8 +10,15 @@ body, html, p, h1,h2,h3,h4,h5,a{
   font-family: 'Lato', sans-serif;
   font-display: swap;
 }
+.all-center{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 
 @import "./homepage";
 @import "./typography";
 @import "./buttons";
 @import "./custom-components";
+@import "./blog";

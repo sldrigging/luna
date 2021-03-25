@@ -16,8 +16,8 @@
     <!--END: FRAME_RSSFEEDS -->
     
 	<!--START: page_styles-->
-	
-	<link rel="preload" href="/assets/templates/common-core/lib/fontello/font/fontello.woff?65779507" as="font"  crossorigin>
+
+	<!-- <link rel="preload" href="/assets/templates/common-core/lib/fontello/font/fontello.woff?65779507" as="font"  crossorigin> -->
 	<link rel="preload" href="/assets/templates/common-core/lib/flexslider/fonts/flexslider-icon.woff" as="font"  crossorigin>
 	<link rel="stylesheet" href="assets/templates/[template]/css/main.css" type="text/css"> 
 	 <link rel="stylesheet" href="assets/templates/[template]/css/bootstrap.min.css" type="text/css" />
@@ -36,23 +36,28 @@
 		<div class="navbar-header hidden-xs clearfix">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-sm-12">
 						<nav id="menulinks-outer" class="menulinks hidden-sm row">
 							<ul id="menulinks" class="nav navbar-nav">
-								<li id="sticky-toggle"><a href="#caTnaV" role="button" data-toggle="collapse" class="collapsed"><span class="icon-menu"></span></a></li>
+								<li id="sticky-toggle"><a href="#caTnaV" role="button" data-toggle="collapse" class="collapsed">
+									</a></li>
 								<!--START: menuitems_view-->
 								<!--START: TOP_LINK_FORMAT-->
 								<li><a href="infopage.asp?page=[link_id]" class="menu" target="[link_target]">[link_name]</a></li>
 								<!--END: TOP_LINK_FORMAT-->
 								<!--END: menuitems_view-->
+								<li>
+									<a href="/myaccount.asp" class="menu">
+										Account
+									<!-- [frame_login-link-text] -->
+								</a>
+							</li>
 							</ul>
+							<a href="/view_cart.asp" class="top_links pull-right hidden-sm cart-style">
+								<span class="icon-basket"></span>  ([SUBTOTAL])
+								<span class="sr-only">Shopping Cart</span>
+							</a>
 						</nav>
-					</div>
-					<div class="col-md-6 col-xs-12">
-						<a href="/view_cart.asp" class="top_links pull-right hidden-sm">
-							<span class="icon-basket"></span> My Cart ([ITEMSINCART])
-							<span class="sr-only">Shopping Cart</span>
-						</a>
 					</div>
 				</div>
 			</div>
@@ -60,50 +65,33 @@
 		<header class="site-header">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-3 visible-xs text-center head-mobile-nav">
+					<div class="col-xs-3 visible-xs  head-mobile-nav">
 						<a href="#" id="mobile-menu-trigger">
 							<span class="icon-menu"></span>
 							<div></div>
 						</a>
 					</div>
-
 					<div class="col-lg-4 col-md-4 col-sm-8 col-xs-6">
 						<div class="logo">
 							<a href="/">
-							<img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=50/assets/images/E-Rigging.png" />
+							<img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=50/assets/images/E-Rigging.png" alt="E-Rigging Logo" />
 						</a>
-								<!--START: global_header-->
-								
-								<!--<h3 class="store-name">[storename]</h3>
-								<h4 class="store-slogan">[storeslogan]</h4>-->
-								<!--END: global_header-->
-							</div>
-						
+					</div>	
 					</div>
 
 					<div class="col-md-offset-4 col-md-4 col-sm-4 welcome_buttons hidden-sm hidden-xs">
-						<div class="pull-right">
-							<p>Hello!</p>
-							<!--START: login-->
-							<a href="/myaccount.asp" class="btn btn-default btn-xl">
-								[frame_login-link-text]
-							</a>
-							<!--END: login-->
-							<!--START: username-->
-							<a href="/logout.asp" class="btn btn-default btn-xl">
-								[frame_logout-link-text]
-							</a>
-							<!--END: username-->
-						</div>
-						<div class="pull-right">
-							<p>New Account?</p>
-							<a href="/register.asp" class="btn btn-default btn-xl">
-								[frame_register-link-text]
-							</a>
+						<div id="searchBox" class="searchBox">
+							<form method="get" name="searchForm" action="search.asp">
+								<div class="search-form">
+									<input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
+									<button type="submit" class="search-submit btn btn-default" aria-label="Search button"><span class="icon-search"></span></button>
+								</div>
+							</form>
+							<div class="clear"></div>
 						</div>
 					</div>
 
-					<div class="col-sm-4 visible-sm tablet_buttons">
+					 <div class="col-sm-4 visible-sm tablet_buttons">
 						<div class="row">
 							<button type="button" id="mobile-menu-trigger2" class="pull-right btn btn-default">
 								<span class="icon-menu"></span> Menu
@@ -111,10 +99,10 @@
 							</button>
 							<a href="#" class="pull-right btn btn-default" data-toggle="modal" data-target="#searchModal">
 								<span class="sr-only">Search</span>
-								<span class="icon-search"></span> Search
-							</a>
+								 <span class="icon-search"></span> Search 
+							</a> 
 						</div>
-					</div>
+					</div> 
 
 					<div class="col-xs-3 visible-xs text-center head-mobile-nav">
 						<a href="#" class="pull-right" data-toggle="modal" data-target="#searchModal">
@@ -126,22 +114,23 @@
 				</div>
 			</div>
 		</header>
-		<section id="caTnaV" class="categoriesNav navbar-wrapper hidden-xs">
-			 <a href="/" class="sticky-ads abs-left">
-				<img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=50/assets/images/e-rigging.png" class="sticky-logo" />
-			</a>
-			<a href="/view_cart.asp" class="sticky-ads abs-right" style="float: right;">
+		<div style="background: #04192c;padding: 12px 80px;" class="hidden-lg hidden-md hidden-xs hidden-xl"></div>
+		<section id="caTnaV" class="categoriesNav navbar-wrapper hidden-sm hidden-xs">			
+			  <a href="/" class=" s-a abs-left">
+				<img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=90/assets/images/e-rigging.png" alt="E-Rigging logo" class="sticky-logo" />
+			</a> 
+			<a href="/view_cart.asp" class="s-a abs-right">
 				<span class="icon-basket"></span>
 			</a> 
 			
-			<div class="container">
-				<div class="col-lg-9 col-md-9 col-sm-12">
+			<div class="container-fluid">
+				<div class="col-lg-12 col-md-9 col-sm-12 all-center " >
 					<!-- <nav id="categories-outer" class="categories navbar-collapse collapse"> -->
 						<nav id="categories-outer" class="categories">
 						<!--START: FRAME_CATEGORY-->
 						<ul id="categories" class="nav navbar-nav">
 							<!--START: CATEGORIES-->
-							<li class="[dropdown_class]">
+							<li class="[dropdown_class] side-space">
 								<!--START: CATEGORY_FORMAT-->
 								<a href="view_category.asp?cat=CATID">CATEGORY</a>
 								<!--END: CATEGORY_FORMAT-->
@@ -150,38 +139,33 @@
 									<div class="container-menu">
 									<!--START: SUB_CATEGORY_FORMAT-->
 									<li><a href="view_category.asp?cat=CATID" class="subcat">
-										<div class="img"><img alt=CATEGORY src="/cdn-cgi/image/fit=scale-down,quality=60/assets/images/category-images/CATID.jpg" /></div>
-									
+										<div class="img"><img alt=CATEGORY src="/cdn-cgi/image/fit=scale-down,quality=60/assets/images/category-images/CATID.jpg" /></div>									
 									CATEGORY
-									
-									
 									</a></li>
-
 									<!--END: SUB_CATEGORY_FORMAT-->
 								</ul>
 								<!--END: SUB_CATEGORIES-->
 							</li>
 							<!--END: CATEGORIES-->
-						</ul>
-					
-						<!--END: FRAME_CATEGORY-->
+						</ul>					
+						<!--END: FRAME_CATEGORY col-lg-2 col-md-3-->
 					</nav>
 				</div>
-				<div class="col-lg-3 col-md-3 hidden-sm">
-					<div class="row">
+				 <div class="hidden-sm s-a search-bar" style="right: 5%; left: auto;">
+				
 						<!--START: FRAME_SEARCH-->
 						<div id="searchBox" class="searchBox">
 							<form method="get" name="searchForm" action="search.asp">
 								<div class="search-form">
-									<input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
+									<input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" style="width: 250px;"/>
 									<button type="submit" class="search-submit btn btn-default" aria-label="Search button"><span class="icon-search"></span></button>
 								</div>
 							</form>
 							<div class="clear"></div>
 						</div>
 						<!--END: FRAME_SEARCH-->
-					</div>
-				</div>
+					
+				</div> 
 			</div>
 		</section>
 	</section>
@@ -320,7 +304,7 @@
     <a href="#" class="scrollToTop"><i class="icon-angle-up icon-2x"></i> <span>TOP</span></a>
 
     <nav id="mobile-menu" class="mobile-menu">
-        <div class="mobile-menu-inner">
+        <div class="mobile-menu-inner" tabindex="0">
             <div class="mobile-menu-close">
                 <a href="#"></a>
             </div>
@@ -359,30 +343,29 @@
     <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title" id="searchLabel">Store Search</h4>
-                </div>
+                
                 <div class="modal-body">
-                    <div id="msearchBox" class="searchBox">
-                        <form method="get" name="MsearchForm" action="search.asp">
-                            <div class="search-form">
-								<label>
-								<input type="text" id="" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
-							</label>
-                                <button type="submit" class="search-submit btn btn-default btn-inverse"><span class="icon-search"></span></button>
-                            </div>
-                        </form>
-                        <div class="clear"></div>
-                    </div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: none;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>  
+					<div id="searchBox" class="searchBox">
+						<form method="get" name="searchForm" action="search.asp">
+							<div class="search-form">
+								<input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
+								<button type="submit" class="search-submit btn btn-default" aria-label="Search button"><span class="icon-search"></span></button>
+							</div>
+						</form>
+						<div class="clear"></div>
+					</div>
+
+                   
                 </div>
             </div>
         </div>
     </div>
 
-	  <link rel="stylesheet" href="assets/templates/common-core/lib/fontello/css/fontello.css" type="text/css" /> 
+	  <link rel="preload" href="assets/templates/common-core/lib/fontello/css/fontello.css" as="style" crossorigin /> 
+	  <link rel="stylesheet" href="assets/templates/common-core/lib/fontello/css/fontello.css" crossorigin /> 
 	  <!--search Icons & Cart Icons-->
     <!-- <link rel="stylesheet" href="assets/templates/common-core/lib/fontello/css/animation.css" type="text/css" />  -->
     <!-- <link rel="stylesheet" href="/assets/templates/common-core/lib/animate-me/animate.css" type="text/css" media="screen" /> -->
@@ -409,6 +392,10 @@
         });
     </script>
     <!--END: quicksearch-->
+
+	<script>
+
+	</script>
 
 	<!--START: 3dcart stats-->
 	<div class="stats hidden"> 

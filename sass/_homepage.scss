@@ -1,3 +1,11 @@
+.side-space{
+    padding: 0 20px!important;
+}
+@media only screen and (max-width: 1500px) {
+    .side-space{
+        padding: 0!important;
+    }
+}
 img {
     max-width: 100%; 
     height: auto;
@@ -19,9 +27,7 @@ padding: 0px 10px;
     max-width: 210px;
     padding: 0px 10px;
 }
-.subcat img {
-	max-height: 100px; 
-}
+
 @media only screen and (max-width: 830px) {
     .card{
         margin: 10px;

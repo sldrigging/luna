@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+    font-display: swap;
+  }
+  
+  body, html, p, h1,h2,h3,h4,h5,a{
+    font-family: 'Lato', sans-serif;
+    font-display: swap;
+  }
+
 html,body {
     height: 100%;
     max-width: 100%;
@@ -225,7 +238,7 @@ section.subcategories_block {
     }
 }
 
-#listing .short-description,#listing .product-id,#listing .extrafieldsBlock {
+#listing .product-id,#listing .extrafieldsBlock {
     display: none
 }
 
@@ -306,6 +319,9 @@ section.subcategories_block {
     font-family: 'Lato', sans-serif;   
     padding: 8px 10px;
     font-weight: 400;
+    background-color: #04192c;
+    color:#fff;
+
 }
 
 .btn-xl {
@@ -355,11 +371,15 @@ body.home-page .header-navigation {
     border-top: 0 solid #5d5d5d;
     background-color: transparent
 }
+.navbar-nav {
+    display: block;
+    float: right!important;
+    vertical-align: top;
+}
 
 .navbar .navbar-nav {
     display: block;
-    float: left;
-    vertical-align: top
+    vertical-align: top;
 }
 
 .navbar .navbar-collapse {
@@ -399,11 +419,12 @@ body.home-page .header-navigation {
     margin-bottom: 0;
     background: #04192c;
     padding: 12px 80px;
+    display: flex;
 }
 
-#categories-outer {
+/* #categories-outer {
     margin: 0 0 0 110px;
-}
+} */
 
 #categories-outer .navbar-nav {
     text-align: left;
@@ -685,6 +706,7 @@ body.home-page .header-navigation {
     background: #fff;
 }
 
+
 .sticky-header.shrink .logo {
     height: 64px
 }
@@ -716,19 +738,24 @@ body.home-page .header-navigation {
 #sticky-toggle a {
     padding: 0!important
 }
-
-.sticky-ads {
+.s-a{
     display: none;
     margin: auto;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
+   left: 0;
+   
+}
+/* luna */
+.s-b{
+    display: block
+}
+.sticky-ads {
+    display: none;
+    margin: auto;
+    position: absolute;    
     text-align: center;
     font-size: 22px;
-    color: #fff;
-    width: 60px;
-    line-height: 60px
+    color: #fff;    
 }
 
 .sticky-ads:hover {
@@ -748,10 +775,16 @@ body.home-page .header-navigation {
     max-height: 50px;
     margin: auto
 }
-
-.sticky-ads.abs-right {
+/* luna */
+.s-a.abs-right {
     left: auto;
-    right: 0
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    line-height: 60px;
+    color: white;
+    font-size: 22px;
 }
 
 
@@ -1028,14 +1061,10 @@ body.home-page .header-navigation {
 .search-form .search-text,.search-form .search-text::placeholder {
     padding: 9px 42px 9px 5px;
     height: 36px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: 0 0;
-    color: #fff;
     text-transform: none;
     font-weight: 400;
-    font-style: italic;
-    font-size: 14px
+    font-size: 14px;
+    background-color: white;
 }
 
 .search-form .search-submit {

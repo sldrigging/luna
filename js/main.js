@@ -267,10 +267,10 @@ var navbar = document.getElementById("caTnaV");
 var sticky = navbar.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    $(".navbar-header").addClass("collapse");
+     $(".navbar-header").addClass("collapse");
     $(".categoriesNav").addClass("stuck");
-    $(".navbar-header,.site-header").addClass("stuck");
-    $(".sticky-jump").addClass("sticky-on");
+     //$(".sticky-jump").addClass("sticky-on");
+     $(".s-a").addClass("s-b");
     // $("body").css("padding-top", header_height);
     // $(".categoriesNav").css("top", header_height);
   } else {
@@ -278,6 +278,7 @@ function myFunction() {
     $(".categoriesNav").removeClass("stuck");
     $(".navbar-header,.site-header").removeClass("stuck");
     $(".sticky-jump").removeClass("sticky-on");
+    $(".s-a").removeClass("s-b");
     $("body").css("padding-top", 0);
     $(".categoriesNav").css("top", 0);
   }
@@ -372,7 +373,7 @@ jQuery(function () {
       $(".dropdown-menu").hide();
       //			$(this).find('.dropdown-menu').addClass('fadeInLeft');
       //			$(this).find('.dropdown-menu').show();
-      $(this).find(".dropdown-menu").slideDown();
+      $(this).find(".dropdown-menu").fadeIn(300);
     },
     out: function () {
       //			$(this).find('.dropdown-menu').removeClass('fadeInLeft');
