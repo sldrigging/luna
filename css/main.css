@@ -17,9 +17,15 @@ body, html, p, h1, h2, h3, h4, h5, a {
 .side-space {
   padding: 0 20px !important; }
 
+.left-margin {
+  margin-left: 0px; }
+
 @media only screen and (max-width: 1500px) {
   .side-space {
-    padding: 0 !important; } }
+    padding: 0 !important; }
+
+  .left-margin {
+    margin-left: -140px; } }
 img {
   max-width: 100%;
   height: auto; }
@@ -38,7 +44,7 @@ img {
   padding: 0px 10px; }
 
 .sticky-logo {
-  max-width: 210px;
+  max-width: 180px;
   padding: 0px 10px; }
 
 @media only screen and (max-width: 830px) {
@@ -102,6 +108,20 @@ a:hover {
   .subtitle {
     font-size: 16px;
     text-align: center; } }
+.btn-default {
+  color: #fff !important;
+  background-color: #04192c !important;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 8px; }
+
+.btn-inverse {
+  color: #fff !important;
+  background-color: #00be00 !important;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 8px; }
+
 .ups-covid {
   text-align: center;
   margin: 20px 10px;

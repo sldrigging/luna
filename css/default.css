@@ -439,7 +439,6 @@ body.home-page .header-navigation {
     border-left: none;
 }
 #categories.navbar-nav {
-    margin: 0 -15px;
     float: none;
     width: auto;
     position: relative;

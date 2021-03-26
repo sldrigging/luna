@@ -1,11 +1,19 @@
 .side-space{
     padding: 0 20px!important;
 }
+.left-margin{
+    margin-left: 0px;
+}
 @media only screen and (max-width: 1500px) {
     .side-space{
         padding: 0!important;
     }
+    .left-margin{
+        margin-left: -140px;
+    }
 }
+
+
 img {
     max-width: 100%; 
     height: auto;
@@ -24,7 +32,7 @@ font-size: 14px;
 padding: 0px 10px;
 }
 .sticky-logo{
-    max-width: 210px;
+    max-width: 180px;
     padding: 0px 10px;
 }
 
