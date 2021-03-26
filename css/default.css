@@ -211,9 +211,6 @@ section.subcategories_block {
 }
 
 
-#listing .btn.btn-addcart {
-    text-transform: uppercase
-}
 
 
 
@@ -228,15 +225,7 @@ section.subcategories_block {
     margin-top: 15px
 }
 
-@media only screen and (max-width: 567px) {
-    .btn.btn-addcart i {
-        display:inline-block
-    }
 
-    .product-item .img .quickview {
-        display: none
-    }
-}
 
 #listing .product-id,#listing .extrafieldsBlock {
     display: none
@@ -314,27 +303,6 @@ section.subcategories_block {
     box-shadow: none
 }
 
-.btn {
-    font-size: 13px;
-    font-family: 'Lato', sans-serif;   
-    padding: 8px 10px;
-    font-weight: 400;
-    background-color: #04192c;
-    color:#fff;
-
-}
-
-.btn-xl {
-    padding: 5px 25px;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.btn-xs {
-    padding: 6px 12px;
-    font-size: 12px;
-    line-height: 20px
-}
 
 
 .header-navigation {
