@@ -122,6 +122,16 @@ a:hover {
   border-radius: 5px;
   padding: 3px 8px; }
 
+.mailinglist-submit {
+  color: #fff !important;
+  background-color: #00be00 !important;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 8px;
+  line-height: 1.5;
+  margin: 0 5px 0 5px;
+  font-size: 18px; }
+
 .ups-covid {
   text-align: center;
   margin: 20px 10px;

@@ -746,7 +746,8 @@ body.home-page .header-navigation {
 }
 /* luna */
 .s-b{
-    display: block
+    display: block;
+    animation:slide-down 0.9s;  
 }
 .sticky-ads {
     display: none;
@@ -2154,7 +2155,8 @@ del.original-price {
     padding: 10px 20px;
     font-size: 12px;
     background-color: #2d2d2d;
-    color: #474646
+    color: #474646;
+    display: none;
 }
 
 .mailinglist-error span {
