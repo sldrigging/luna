@@ -266,7 +266,7 @@ window.onscroll = function () {
 var navbar = document.getElementById("caTnaV");
 var sticky = navbar.offsetTop;
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
+  if (window.pageYOffset >= sticky+100) {
      $(".navbar-header").addClass("collapse");
     $(".categoriesNav").addClass("stuck");
      //$(".sticky-jump").addClass("sticky-on");
