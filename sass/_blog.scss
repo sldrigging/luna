@@ -2,3 +2,17 @@
     height:5px;
     background-color: aqua;
 }
+.widget-header{
+    border-radius: 5px; 
+    font-size: 20px;
+    font-weight: 600;
+}
+.sidebar-widget ul li {
+    background-color: #e4e4e4;
+    padding: 12px!important;
+    border-radius: 5px;
+    font-weight: 600!important;
+}
+.sidebar-widget ul li:hover{
+    background-color: #c4c7d6;
+}
