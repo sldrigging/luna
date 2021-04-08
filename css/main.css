@@ -2,7 +2,7 @@
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjxAwXjeu.woff2) format("woff2");
+  src: url("/assets/templates/luna-core/fonts/Lato-Regular.ttf") format("woff2");
   font-display: swap; }
 body, html, p, h1, h2, h3, h4, h5, a {
   font-family: 'Lato', sans-serif;

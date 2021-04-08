@@ -1,3 +1,8 @@
+//Replace Account with firstname lastname if Logged In
+  $(".guest").text(function(index, text) {
+    return text.replace("Guest", "Sign In/ Register");
+});
+ 
 jQuery(document).ready(function () {
   moveMenu();
   sticky_header();
