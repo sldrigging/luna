@@ -1,14 +1,14 @@
 <div class="container-fluid tab-hide mob-hide product-sticky-header">
 <div
-  class="col-md-3 pro-sticky-logo">
+  class="col-sm-3 pro-sticky-logo">
   <a href="/">
     <img src="/cdn-cgi/image/fit=scale-down,quality=60/assets/images/e-rigging.png"  style="height: 50px; width: auto"
   /></a>
 </div>
-<div class="col-md-2" style="text-align: center">
+<div class="col-sm-2" style="text-align: center">
   <img    src="thumbnail.asp?file=[image1]&maxx=108&maxy=108"    alt="[imagecaption1]"    style="width: 100px; height: auto"  />
 </div>
-<div class="col-md-4">
+<div class="col-sm-5">
   <p style="font-size: 18px; margin-bottom: 5px">[h1_tag]</p>
   <div style="margin-left: -9%; display: inline-block">
     <!-- TrustBox widget - Product Mini MultiSource -->
@@ -38,7 +38,7 @@
     <meta itemprop="price" content="[price_without_currency]" />
   </div>
 </div>
-<div class="col-md-2">
+<div class="col-sm-2">
   <div class="addToCartBlock sub-section">
     <div class="qtybox-addcart form-group">
       <button
@@ -446,7 +446,7 @@
                     </div>
 
                      <!-- badges -->
-                    <div class="info">[extra_field_6]</div>
+                    <div class="info badges">[extra_field_6]</div>
 
                     <div class="special-actions text-center">
                         <!--START: addWishlist-->
@@ -1451,31 +1451,39 @@
              <!--START: dare -->
             <div class="container" id="spec">
                 <!--  extra_field_7 Spec Sheet -->
-            <div class="col-md-12 spec-sections">
+            <div class="col-md-12 spec-sections" style="padding: 0;">
                 <p class="spec-title">[product_extrafield7]</p>          
                 <div class="info">[extra_field_7]</div>
             </div>
 
+            <!--  extra_field_9 Catalog -->
+            <div class="col-md-12" style="padding: 0;">
+            <!-- <p class="spec-title">[product_extrafield9]</p>           -->
+            <div class="info">[extra_field_9]</div>
+            </div>
+
             <!-- Description -->
-            <div class="col-md-12 spec-sections">
-                <p class="spec-title">[product_Header-description]</p>          
+            <div class="col-md-12 spec-sections" id="extended-description" style="padding: 0;">                
+                <p class="spec-title">[product_Header-description]</p>  
+                <div class="col-md-12">      
                 <div class="item" itemprop="description">[extended_description]</div>
+                </div>
             </div>
 
             <!--  extra_field_7 product Manual & Certifications -->
-            <div class="col-md-12 spec-sections" style="display: block;">
+            <div class="col-md-12 spec-sections" style="display: block; padding: 0;">
                 <p class="spec-title">[product_extrafield8]</p>          
                 <div class="info">[extra_field_8]</div>
             </div>
+            
+                
+                
+              
 
-              <!--  extra_field_9 Catalog -->
-            <div class="col-md-12 spec-sections">
-                <p class="spec-title">[product_extrafield9]</p>          
-                <div class="info">[extra_field_9]</div>
-            </div>
+         
 
             <!--  Trustpilot Reviews -->
-            <div class="col-md-12 spec-sections">
+            <div class="col-md-12 spec-sections" style="padding: 0;">
                 <p class="spec-title">[reviews_header]</p>
                 <!-- TrustBox widget - Product Reviews SEO -->
                 <div
@@ -1501,7 +1509,7 @@
               </div>
 
                <!-- Q&A -->
-        <div class="col-md-12 spec-sections qna-section">
+        <div class="col-md-12 spec-sections qna-section" style="padding: 0;">
             <!--START: qa_tab-->
             <!--START: qa_link-->
             <div class="qa_link button right">

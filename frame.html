@@ -13,7 +13,9 @@
     <link rel="alternate" type="application/rss+xml" title="New Releases (RSS 2.0)" href="[store_url]/rss.asp?type=newreleases" />
     <link rel="alternate" type="application/rss+xml" title="Best Sellers (RSS 2.0)" href="[store_url]/rss.asp?type=bestsellers" />
     <link rel="alternate" type="application/rss+xml" title="Latest Blog Posts (RSS 2.0)" href="[store_url]/rss.asp?type=blog" />
+	<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<script src="https://kit.fontawesome.com/a786d5144c.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <!--END: FRAME_RSSFEEDS -->
     
@@ -137,16 +139,26 @@
 								<a href="view_category.asp?cat=CATID">CATEGORY</a>
 								<!--END: CATEGORY_FORMAT-->
 								<!--START: SUB_CATEGORIES-->
-								<ul class="dropdown-menu">
-									<div class="container-menu" style="background-color: none;">
+								<!-- <ul class="dropdownmenu">
+									<div class="containermenu" style="background-color: none;">-->
 									<!--START: SUB_CATEGORY_FORMAT-->
-									<li><a href="view_category.asp?cat=CATID" class="subcat">
+									<!--<li><a href="view_category.asp?cat=CATID" class="subcat">
 										<div class="img">
 											<img alt=CATEGORY src="/cdn-cgi/image/fit=scale-down,quality=60/assets/images/category-images/CATID.jpg" /></div>									
 									CATEGORY
-									</a></li>
+									</a></li>-->
 									<!--END: SUB_CATEGORY_FORMAT-->
-								</ul>
+								<!--</ul> -->
+								<!-- <ul class="dropdown-menu">
+									<div class="container-menu" style="background-color: none;">-->
+									<!--START: SUB_CATEGORY_FORMAT-->
+									<!--<li><a href="view_category.asp?cat=CATID" class="subcat">
+										<div class="img">
+											<img alt=CATEGORY src="/cdn-cgi/image/fit=scale-down,quality=60/assets/images/category-images/CATID.jpg" /></div>									
+									CATEGORY
+									</a></li>-->
+									<!--END: SUB_CATEGORY_FORMAT-->
+								<!--</ul> -->
 								<!--END: SUB_CATEGORIES-->
 							</li>
 							<!--END: CATEGORIES-->
@@ -472,13 +484,24 @@
 
 	<!--START: page_scripts-->	
 
-	<script src="assets/templates/[template]/js/luxon.min.js"></script>
+	<script src="assets/templates/[template]/js/lib/luxon.min.js"></script>
     <script src="assets/templates/common-core/lib/jquery.min.js"></script>
 	<script src="assets/templates/common-core/lib/jquery-migrate-3.0.1.min.js"></script>
     <script src="assets/templates/common-core/lib/bootstrap/js/bootstrap.js"></script>
     <script src="assets/templates/common-core/js/core.js"></script>
-    <script src="assets/templates/[template]/js/jquery.hoverIntent.js"></script>
+    <script src="assets/templates/[template]/js/lib/jquery.hoverIntent.js"></script>
 	<script src="assets/templates/[template]/js/main.js"></script>
+	<script type="text/javascript" src="assets/templates/luna-core/js/lib/magnific-popup.js"></script> 
+
+
+	<!-- <script src="assets/templates/luna-core/js/lib/image-map-resizer.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://code.jquery.com/jquery-migrate-3.0.1.min.js'></script>
+   <script src="assets/templates/luna-core/js/lib/jquery.waypoints.js"></script>
+    -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" />
+	<!-- image modal -->
 
 	[page_scripts]
 	<!--END: page_scripts-->
@@ -548,7 +571,16 @@ $(".products-section").waypoint(function(){$(".products-section").addClass("anim
 			
 	
 
+</script>
 
+<script>
+	if ($("#listing a").length < 1) { 
+	// add magnific popup to all images except product images
+	jQuery('a[href$="jpg"], a[href$="jpeg"], a[href$="png"], a[href$="gif"]').not('[data-disable-popup="true"]').magnificPopup({
+		type:'image',
+		titleSrc: 'title'
+	});
+	}
 </script>
 	</div>
 	<!--END: 3dcart stats-->
