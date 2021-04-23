@@ -230,4 +230,14 @@ height: auto;
       display: none!important;
     }
   }
-
+.short-description{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+#read-more{
+    color: blue;
+    font-weight: 600;
+    cursor: pointer;
+}

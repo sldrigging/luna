@@ -1,4 +1,7 @@
-
+//Replace Account with firstname lastname if Logged In
+$(".guest").text(function(index, text) {
+  return text.replace("Guest", "Sign In/ Register");
+});
 
 //homepage scroll nav hide on click outside
 
@@ -30,9 +33,11 @@ $(document).ready(function(){
 window.onscroll = function () {
 myProductSticky();
 };
+var navbar = document.getElementById("caTnaV");
 var sticky = navbar.offsetTop;
 function myProductSticky() {
 if (window.pageYOffset >= 300) {
+  console.log('henlognjdb');
   $(".product-sticky-header").addClass("s-b");
     $(".product-sticky-header").addClass("stuck");
 } else {
@@ -41,3 +46,8 @@ if (window.pageYOffset >= 300) {
   }
 }
 
+$("#read-more").click(function() {
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $("#extended-description").offset().top
+  }, 2000);
+});
