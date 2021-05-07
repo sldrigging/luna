@@ -141,22 +141,21 @@ div.short-description{
 /* add e148
 sub e15d */
 
-
   .catalog-title:after{
-    font-family: "Material Icons";
-    content: "\e148"; 
+    font-family: "Font Awesome 5 Free";
+    content: "\f0fe"; 
     float: right;            
     font-size: 22px;
 }
 
 .catalog-title[aria-expanded="true"]:after {
         /* symbol for "opening" panels */
-        content: "\e15d";
+        content: "\f056";
     }
 
     .catalog-title[aria-expanded="false"]:after {
     /* symbol for "collapsed" panels */
-    content: "\e148";
+    content: "\f0fe";
 }
 
   

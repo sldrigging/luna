@@ -48,6 +48,6 @@ if (window.pageYOffset >= 300) {
 
 $("#read-more").click(function() {
   $([document.documentElement, document.body]).animate({
-      scrollTop: $("#extended-description").offset().top
+      scrollTop: $("#extended-description").offset().top -120
   }, 2000);
 });

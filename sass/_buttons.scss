@@ -1,0 +1,73 @@
+
+  .btn-default {
+    color: #fff !important;
+    background-color: #04192c !important;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 8px; }
+  
+  .btn-primary {
+    color: #fff !important;
+    background-color: #04192c !important;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 8px; }
+  
+  .btn-inverse {
+    color: #fff !important;
+    background-color: #00be00 !important;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 8px; }
+  
+  .mailinglist-submit {
+    color: #fff !important;
+    background-color: #00be00 !important;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 8px;
+    line-height: 1.5;
+    margin: 0 5px 0 5px;
+    font-size: 18px; }
+  
+  .btn {
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    padding: 8px 10px;
+    font-weight: 400;
+    background-color: #04192c;
+    color: #fff; }
+  
+  .btn-primary:hover {
+    background-color: #0d2f4e !important;
+    box-shadow: 0 4px 5px darkgrey;
+    transition: background-color 0.5s ease; }
+  
+  .btn-default:hover {
+    background-color: #0d2f4e !important;
+    box-shadow: 0 4px 5px darkgrey;
+    transition: background-color 0.5s ease; }
+  
+  .btn-inverse:hover {
+    background-color: #01a601 !important;
+    transition: background-color 0.5s ease; }
+  
+  .btn-xl {
+    padding: 5px 25px;
+    font-size: 18px;
+    font-weight: 700; }
+  
+  .btn-xs {
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 20px; }
+  
+  @media only screen and (max-width: 567px) {
+    .btn.btn-addcart i {
+      display: inline-block; }
+  
+    .product-item .img .quickview {
+      display: none; } }
+  #listing .btn.btn-addcart {
+    text-transform: uppercase; }
+  

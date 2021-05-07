@@ -11,7 +11,26 @@ body, html, p, h1,h2,h3,h4,h5,a{
   font-display: swap;
 }
 
+.all-center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+
+.side-space {
+  padding: 0 20px !important; }
+
+  @media only screen and (max-width: 1500px) {
+    .side-space {
+      padding: 0 !important; }
+    }
+
+.left-margin {
+  margin-left: 0px; }
+
+
 @import "./homepage";
 @import "./typography";
 @import "./buttons";
 @import "./custom-components";
+@import "./blog"

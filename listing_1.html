@@ -38,9 +38,20 @@
     <meta itemprop="price" content="[price_without_currency]" />
   </div>
 </div>
-<div class="col-sm-2">
-  <div class="addToCartBlock sub-section">
-    <div class="qtybox-addcart form-group">
+<div class="col-sm-2">  
+     <!--START: qtybox-->
+     <!-- <label>[product_quantity]</label>
+     <label class="qty-input">
+         <input id="qty-0" type="text" name="qty-0" value="[minimumorder_product]" class="form-control" 
+         onchange="validateValues(document.add,1);"
+          />
+         <span class="qty-nav">
+             <button type="button" class="qty-up" data-target="#qty-0">+</button>
+             <button type="button" class="qty-down" data-target="#qty-0">-</button>
+         </span>
+     </label> -->
+     <!--END: qtybox-->
+     
       <button
         type="button"
         id="Add"
@@ -49,9 +60,7 @@
       >
         <i class="icon-basket" role="presentation"></i>
         ADD TO CART
-      </button>
-    </div>
-  </div>
+      </button>            
 </div>
 </div>
 
@@ -750,7 +759,7 @@
                                 <!--START: qtybox-->
                                 <label>[product_quantity]</label>
                                 <label class="qty-input">
-                                    <input id="qty-0" type="text" name="qty-0" value="[minimumorder_product]" class="form-control" onchange="validateValues(document.add,1);" />
+                                    <input id="qty-0" type="text" name="qty-0" value="[minimumorder_product]" class="form-control"   onchange="validateValues(document.add,1);" />
                                     <span class="qty-nav">
                                         <button type="button" class="qty-up" data-target="#qty-0">+</button>
                                         <button type="button" class="qty-down" data-target="#qty-0">-</button>
@@ -2302,3 +2311,8 @@ function checkPrevPurch(userId, caId) {
 <link rel="stylesheet" href="/assets/templates/luna-core/css/listing.css" type="text/css" media="screen" />
 <!--END: template_styles-->
 
+<!-- <script>
+    function updateQty(x){
+        validateValues(document.add,1);
+    }
+</script> -->
