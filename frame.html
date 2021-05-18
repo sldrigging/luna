@@ -1,576 +1,787 @@
 <!doctype html>
 <html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>[TITLE]</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    [META]
-	<meta property="og:title" content="E-Rigging.com">
-<meta property="og:description" content="A New Orleans Rigging eCommerce Company">
-<meta property="og:image" content="https://edashrigging-com.3dcartstores.com/assets/templates/luna-core/images/meta-image.jpg">
-<meta property="og:url" content="https://www.e-rigging.com/">
-
-	<base href="/">
-    <!--START: FRAME_RSSFEEDS -->
-    <link rel="alternate" type="application/rss+xml" title="Featured Items (RSS 2.0)" href="[store_url]/rss.asp?type=home" />
-    <link rel="alternate" type="application/rss+xml" title="Products On Sale (RSS 2.0)" href="[store_url]/rss.asp?type=onsale" />
-    <link rel="alternate" type="application/rss+xml" title="New Releases (RSS 2.0)" href="[store_url]/rss.asp?type=newreleases" />
-    <link rel="alternate" type="application/rss+xml" title="Best Sellers (RSS 2.0)" href="[store_url]/rss.asp?type=bestsellers" />
-    <link rel="alternate" type="application/rss+xml" title="Latest Blog Posts (RSS 2.0)" href="[store_url]/rss.asp?type=blog" />
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-
-    <!--END: FRAME_RSSFEEDS -->
-    
-	<!--START: page_styles-->
-
-	<!-- <link rel="preload" href="/assets/templates/common-core/lib/fontello/font/fontello.woff?65779507" as="font"  crossorigin> -->
-	
-	<link rel="preload" href="/assets/templates/common-core/lib/flexslider/fonts/flexslider-icon.woff" as="font"  crossorigin>
-	<link rel="stylesheet" href="assets/templates/[template]/css/main.css" type="text/css"> 
-	 <link rel="stylesheet" href="assets/templates/[template]/css/bootstrap.min.css" type="text/css" />
-	<link rel="StyleSheet" href="assets/templates/common-core/css/core.css" type="text/css" /> 
-	[page_styles]	
-    <!-- <link rel="stylesheet" href="https://use.typekit.net/kdt5uvm.css"> -->
-	<link rel="stylesheet" href="assets/templates/[template]/css/default.css" type="text/css" />
-	
-	<!--END: page_styles-->
-<!-- TrustBox script -->
-<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-<!-- End TrustBox script -->
-</head>
-<body class="[body_class]" data-currency="[currency_symbol]">
-	<section class="header-navigation sticky-jump">
-		<div class="navbar-header hidden-xs clearfix">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<nav id="menulinks-outer" class="menulinks hidden-sm row">
-							<ul id="menulinks" class="nav navbar-nav">
-								<li id="sticky-toggle"><a href="#caTnaV" role="button" data-toggle="collapse" class="collapsed">
-									</a></li>
-								<!--START: menuitems_view-->
-								<!--START: TOP_LINK_FORMAT-->
-								<li><a href="infopage.asp?page=[link_id]" class="menu" target="[link_target]">[link_name]</a></li>
-								<!--END: TOP_LINK_FORMAT-->
-								<!--END: menuitems_view-->
-								<li>
-									<a href="/myaccount.asp" class="menu guest">
-										[username]
-									<!-- [frame_login-link-text] -->
-								</a>
-							</li>
-							</ul>
-							<a href="/view_cart.asp" class="top_links pull-right hidden-sm cart-style">
-								<span class="icon-basket"></span>  ([SUBTOTAL])
-								<span class="sr-only">Shopping Cart</span>
-							</a>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div>
-		<header class="site-header">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-3 visible-xs  head-mobile-nav">
-						<a href="#" id="mobile-menu-trigger">
-							<span class="icon-menu"></span>
-							<div></div>
-						</a>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-8 col-xs-6">
-						<div class="logo">
-							<a href="/">
-							<img src="assets/images/E-Rigging-logo.svg" alt="E-Rigging Logo" />
-						</a>
-					</div>	
-					</div>
-
-					<div class="col-md-offset-4 col-md-4 col-sm-4 welcome_buttons hidden-sm hidden-xs">
-						<div id="searchBox" class="searchBox">
-							<form method="get" name="searchForm" action="search.asp">
-								<div class="search-form">
-									<input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
-									<button type="submit" class="search-submit btn btn-default" aria-label="Search button"><span class="icon-search"></span></button>
-								</div>
-							</form>
-							<div class="clear"></div>
-						</div>
-					</div>
-
-					 <div class="col-sm-4 visible-sm tablet_buttons">
-						<div class="row">
-							<button type="button" id="mobile-menu-trigger2" class="pull-right btn btn-default">
-								<span class="icon-menu"></span> Menu
-								<span class="sr-only">Toggle navigation</span>
-							</button>
-							<a href="#" class="pull-right btn btn-default" data-toggle="modal" data-target="#searchModal">
-								<span class="sr-only">Search</span>
-								 <span class="icon-search"></span> Search 
-							</a> 
-						</div>
-					</div> 
-
-					<div class="col-xs-3 visible-xs text-center head-mobile-nav">
-						<a href="#" class="pull-right" data-toggle="modal" data-target="#searchModal">
-							<span class="sr-only">Search</span>
-							<span class="icon-search"></span>
-							<div></div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</header>
-		<div style="background: #04192c;padding: 12px 80px;" class="hidden-lg hidden-md hidden-xs hidden-xl"></div>
-		<section id="caTnaV" class="categoriesNav navbar-wrapper hidden-sm hidden-xs" style="transition: .3s,opacity .3s;">			
-			  <a href="/" class=" s-a abs-left">
-				<img src="assets/images/E-Rigging-logo.svg" alt="E-Rigging logo" class="sticky-logo" />
-			</a> 
-			<a href="/view_cart.asp" class="s-a abs-right">
-				<span class="icon-basket"></span>
-			</a> 
-			
-			<div class="container-fluid ">
-				<div class="col-lg-12 col-md-9 col-sm-12 all-center " >
-					<!-- <nav id="categories-outer" class="categories navbar-collapse collapse"> -->
-						<nav id="categories-outer" class="categories">
-						<!--START: FRAME_CATEGORY-->
-						<ul id="categories" class="nav navbar-nav left-margin">
-							<!--START: CATEGORIES-->
-							<li class="[dropdown_class] side-space">
-								<!--START: CATEGORY_FORMAT-->
-								<a href="view_category.asp?cat=CATID">CATEGORY</a>
-								<!--END: CATEGORY_FORMAT-->
-								<!--START: SUB_CATEGORIES-->
-								<ul class="dropdown-menu">
-									<div class="container-menu" style="background-color: none;">
-									<!--START: SUB_CATEGORY_FORMAT-->
-									<li><a href="view_category.asp?cat=CATID" class="subcat">
-										<div class="img" style="width: 20%;">
-											<img alt=CATEGORY src="/cdn-cgi/image/fit=scale-down,quality=60/assets/images/category-images/CATID.jpg" /></div>									
-									CATEGORY
-									</a></li>
-									<!--END: SUB_CATEGORY_FORMAT-->
-								</ul>
-								<!--END: SUB_CATEGORIES-->
-							</li>
-							<!--END: CATEGORIES-->
-						</ul>					
-						<!--END: FRAME_CATEGORY col-lg-2 col-md-3-->
-					</nav>
-				</div>
-				 <div class="hidden-sm s-a search-bar" style="right: 5%; left: auto;">
-				
-						<!--START: FRAME_SEARCH-->
-						<div id="searchBox" class="searchBox">
-							<form method="get" name="searchForm" action="search.asp">
-								<div class="search-form">
-									<input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" style="width: 250px;"/>
-									<button type="submit" class="search-submit btn btn-default" aria-label="Search button"><span class="icon-search"></span></button>
-								</div>
-							</form>
-							<div class="clear"></div>
-						</div>
-						<!--END: FRAME_SEARCH-->
-					
-				</div> 
-			</div>
-		</section>
-	</section>
-
-	<!--Get current page template-->
-	[page_content]
-	<!--/Get current page template-->
-	
-	<!-- FOOTER -->
-	<footer class="site-footer">
-		<div class="row" style="margin-bottom: 2%;">
-			<a href="/About-Us"><div class="col-sm-6 no-bull-div">
-				<img alt="erigging promise logo and slogan - fast, no bull service" src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/templates/luna-core/images/home/eriggingpromisew.png" class="eriggingpromiseimg">
-				</div></a>
-			<a href="/About-Us"><div class="col-sm-6 no-gimmicks-div">
-				<p style="color: white">NO Gimmicks. NO Pop Ups. NO Clickbait. NO Bull. <br>
-				   E-Rigging guarantees top notch quality products <br> 
-				   & service from New Orleans.</p>
-				</div></a> 
-					</div>
-		<div class="container">
-			<div class="row">					
-						<div class="col-sm-12" style="text-align: center;">
-							<div class="visible-xs extrapages-shower">
-								<!-- <a href="#extrapages" role="button" data-toggle="collapse" class="collapsed">Links</a> -->
-							</div>
-							<!--START: FRAME_LINKS-->
-							<ul id="extrapages" class="list-unstyled extrapages row">
-								<li class="label hidden">Links</li>
-								<!--START: LINKS-->
-								<!--START: LINK_FORMAT-->
-								<li class="col-md-4 col-sm-4"><a href="infopage.asp?page=[link_id]&extra=1" target="[link_target]" class="menu-bottom">[link_name]</a></li>
-								<!--END: LINK_FORMAT-->
-								<!--END: LINKS-->
-								<li class="col-md-4 col-sm-4">
-									<a href="/about" target="[link_target]" class="menu-bottom">About</a>
-								</li>
-								<li class="col-md-4 col-sm-4">
-									<a href="/how-to" target="[link_target]" class="menu-bottom">How To</a>
-								</li>
-								<li class="col-md-4 col-sm-4">
-									<a href="/blog.asp" target="[link_target]" class="menu-bottom">Blog</a>
-								</li>
-								<li class="col-md-4 col-sm-4">
-									<a href="/contact-us" target="[link_target]" class="menu-bottom">Contact</a>
-								</li>
-							</ul>
-							<!--END: FRAME_LINKS-->
-						</div>
-				
-			</div>
-			<div class="row" style="margin-top:3%">
-				<div class="col-md-12">
-					<!--START: FRAME_MAILLIST-->
-					<div class="mailist-box ajax-mailinglist" data-callfront="mailinglist_callfront" data-callback="mailinglist_response" style="display: none;">
-						<form method="post" name="mailing" action="mailing_list_ajax.asp" class="row">
-							
-							<div class="col-sm-12 col-xs-12">
-								<div class="mailinglist-form clearfix">
-									<label style="display: unset;"><input class="mailinglist-input form-control" type="text" name="email" placeholder="[mailinglist_email-field]" autocomplete="off" /></label>
-									<button class="mailinglist-submit" type="submit" name="www">
-										<!-- <span id="mailing-btn-txt "><i class="icon-mail"></i>[mailinglist_button]</span> -->Subscribe
-										<span id="mailing-btn-load" class="mailing-btn-load icon-spin2 animate-spin hidden"></span>
-									</button>
-								</div>
-							</div>
-							<div class="col-sm-12 col-xs-12">
-								<div class="clearfix maillist-options">
-									<div class="subscribe"><input id="list_subscribe" type="radio" name="subscribe" value="1" checked="checked"> <label for="list_subscribe">[mailinglist_subscribe]</label></div>
-									<div class="subscribe"><input id="list_unsubscribe" type="radio" name="subscribe" value="0"> <label for="list_unsubscribe">[mailinglist_unsubscribe]</label></div>
-								</div>
-							</div>
-						</form>
-						<div id="mailinglist-response" class="mailinglist-response">
-                            <div class="mailinglist-error hidden">[mailinglist_email-error]</div>
-                            <div class="mailinglist-subscribed hidden">[mailinglist_subscribe-success]</div>
-                            <div class="mailinglist-unsubscribed hidden">[mailinglist_unsubscribe-success]</div>
-						</div>
-					</div>
-					 
-					<!-- <style type="text/css">
-					#mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;margin-bottom:10px}
-					#mc_embed_signup .button {
-						background-color: #00be00;font-size: 18px;
-					}
-					#mc_embed_signup .button:hover {
-								background-color: #01a601;
-								cursor: pointer;
-							}
-					#mc_embed_signup input.email:focus {
-									outline-width: 0;
-									background-color: #fafafa;
-								}					
-					</style> -->
-
-				<!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-			<style type="text/css">
-					#mc_embed_signup .mc-field-group {
-						width: auto!important;
-					}
-					#mc_embed_signup{ 
-						clear:left; 
-						font:14px Helvetica,Arial,sans-serif; 
-						width:auto;
-						margin-bottom:10px; 
-						
-					}
-					#mc_embed_signup .mc-field-group {
-						padding: 0!important;
-					}
-					#mc_embed_signup .button {
-						background-color: #00be00;
-						font-size: 18px;
-						margin: 0 10px;
-						height: 39px;
-					}
-					#mc_embed_signup .button:hover {
-						background-color: #01a601;
-						cursor: pointer;
-						display: flex;
-					}
-					#mc_embed_signup input.email:focus {
-						outline-width: 0;
-						background-color: #fafafa;
-					}		
-					#mc_embed_signup .mc-field-group input {
-						width: 300px;
-						font-size: 18px;
-						color: grey;
-					}
-					#mc_embed_signup_scroll{
-						display: flex;
-					}
-					@media only screen and (max-width: 600px) {
-						#mc_embed_signup .mc-field-group input {
-						width: 200px;
-						}
-					}
-								
-			</style>
-			<div style="display: flex!important; 
-			align-items: center; 
-			justify-content: center;">
-<div id="mc_embed_signup" >
-	<label for="mce-EMAIL">Subscribe to receive Offers, Discounts and News from E-rigging.com</label>
-	<form action="https://E-Rigging.us18.list-manage.com/subscribe/post?u=79ae2d8078facdd05bd62257b&amp;id=3e01be8372" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		<div id="mc_embed_signup_scroll">			
-		<!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
-		<div class="mc-field-group">
-			<!-- <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label> -->
-			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address" >			
-		</div>
-		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-		</div>
-		<div id="mce-responses" class="clear">
-			<div class="response" id="mce-error-response" style="display:none"></div>
-			<div class="response" id="mce-success-response" style="display:none"></div>
-		</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-		<div style="position: absolute; left: -5000px;" aria-hidden="true">
-			<input type="text" name="b_79ae2d8078facdd05bd62257b_3e01be8372" tabindex="-1" value="">
-		</div>
-	</form>
-</div>
-</div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
-				</div>
-			</div>
-			<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-<!-- End TrustBox script -->
-			
-
-<div class="trustpilot-section">
-<!-- TrustBox widget - Carousel -->
-<div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="5a797495083a4b00016dba93" data-style-height="140px" data-style-width="100%" data-theme="dark" data-stars="4,5" data-review-languages="en">
-  <a href="https://www.trustpilot.com/review/e-rigging.com" target="_blank" rel="noopener">Trustpilot</a>
-</div>
-<!-- End TrustBox widget -->
-</div>
-
-
-				<div class="col-sm-12">
-					<!--START: global_footer-->
-					<div class="global-footer">
-						<!--START: social_icons-->
-					<ul class="social-icons list-unstyled list-inline">
-						<li class="social-icons-label hidden">Follow Us</li>
-						<!--START: social_link_blog-->
-						<li><a href="[social_link_blog_url]" class="blog" rel="noopener" target="_blank" title="Subscribe to our Blog"><span class="icon-rss"></span></a></li>
-						<!--END: social_link_blog-->
-						<!--START: social_link_facebook-->
-						<li><a href="[social_link_facebook_url]" class="facebook" rel="noopener" target="_blank" title="Like Us on Facebook"><span class="icon-facebook"></span></a></li>
-						<!--END: social_link_facebook-->
-						<!--START: social_link_pinterest-->
-						<li><a href="[social_link_pinterest_url]" class="pinterest" rel="noopener" target="_blank" title="Follow Us on Pinterest"><span class="icon-pinterest"></span></a></li>
-						<!--END: social_link_pinterest-->
-						<!--START: social_link_twitter-->
-						<li><a href="[social_link_twitter_url]" class="twitter" rel="noopener" target="_blank" title="Follow Us on Twitter"><span class="icon-twitter"></span></a></li>
-						<!--END: social_link_twitter-->
-						<!--START: social_link_googleplus-->
-						<li><a href="[social_link_googleplus_url]" class="gplus" rel="noopener" target="_blank" title="Follow Us on Google+"><span class="icon-gplus"></span></a></li>
-						<!--END: social_link_googleplus-->
-						<!--START: social_link_youTube-->
-						<li><a href="[social_link_youTube_url]" class="youtube" rel="noopener" target="_blank" title="Subscribe to our Channel"><span class="icon-youtube"></span></a></li>
-						<!--END: social_link_youTube-->
-						<!--START: social_link_instagram-->
-						<li><a href="[social_link_instagram_url]" class="instagram" rel="noopener" target="_blank" title="Follow Us on Instagram"><span class="icon-instagram"></span></a></li>
-						<!--END: social_link_instagram-->
-						<!--START: social_link_tumblr-->
-						<li><a href="[social_link_tumblr_url]" class="tumblr" rel="noopener" target="_blank" title="Follow Us on Tumblr"><span class="icon-tumblr"></span></a></li>
-						<!--END: social_link_tumblr-->
-					</ul>
-					<!--END: social_icons-->
-					</div>
-					<!--END: global_footer-->
-				</div>
-			</div>
-		</div>
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="copyright_txt">
-							<p>[frame_copyright1]</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-    <a href="#" class="scrollToTop"><i class="icon-angle-up icon-2x"></i> <span>TOP</span></a>
-
-    <nav id="mobile-menu" class="mobile-menu">
-        <div class="mobile-menu-inner" tabindex="0">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>[TITLE]</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      [META]
+      <meta property="og:title" content="E-Rigging.com">
+      <meta property="og:description" content="A New Orleans Rigging eCommerce Company">
+      <meta property="og:image" content="https://edashrigging-com.3dcartstores.com/assets/templates/luna-core/images/meta-image.jpg">
+      <meta property="og:url" content="https://www.e-rigging.com/">
+      <base href="/">
+      <!--START: FRAME_RSSFEEDS -->
+      <link rel="alternate" type="application/rss+xml" title="Featured Items (RSS 2.0)" href="[store_url]/rss.asp?type=home" />
+      <link rel="alternate" type="application/rss+xml" title="Products On Sale (RSS 2.0)" href="[store_url]/rss.asp?type=onsale" />
+      <link rel="alternate" type="application/rss+xml" title="New Releases (RSS 2.0)" href="[store_url]/rss.asp?type=newreleases" />
+      <link rel="alternate" type="application/rss+xml" title="Best Sellers (RSS 2.0)" href="[store_url]/rss.asp?type=bestsellers" />
+      <link rel="alternate" type="application/rss+xml" title="Latest Blog Posts (RSS 2.0)" href="[store_url]/rss.asp?type=blog" />
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+      <!--END: FRAME_RSSFEEDS -->
+      <!--START: page_styles-->
+      <!-- <link rel="preload" href="/assets/templates/common-core/lib/fontello/font/fontello.woff?65779507" as="font"  crossorigin> -->
+      <link rel="preload" href="/assets/templates/common-core/lib/flexslider/fonts/flexslider-icon.woff" as="font"  crossorigin>
+      <link rel="stylesheet" href="assets/templates/[template]/css/main.css" type="text/css">
+      <link rel="stylesheet" href="assets/templates/[template]/css/bootstrap.min.css" type="text/css" />
+      <link rel="StyleSheet" href="assets/templates/common-core/css/core.css" type="text/css" />
+      [page_styles]	
+      <!-- <link rel="stylesheet" href="https://use.typekit.net/kdt5uvm.css"> -->
+      <link rel="stylesheet" href="assets/templates/[template]/css/default.css" type="text/css" />
+      <link rel="stylesheet" href="assets/templates/[template]/css/mega-menu.css" type="text/css" />
+      <!--END: page_styles-->
+      <!-- TrustBox script -->
+      <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+      <!-- End TrustBox script -->
+   </head>
+   <body class="[body_class]" data-currency="[currency_symbol]">
+      <section class="header-navigation sticky-jump">
+         <div class="navbar-header hidden-xs clearfix">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <nav id="menulinks-outer" class="menulinks hidden-sm row">
+                        <ul id="menulinks" class="nav navbar-nav">
+                           <li id="sticky-toggle"><a href="#caTnaV" role="button" data-toggle="collapse" class="collapsed">
+                              </a>
+                           </li>
+                           <!--START: menuitems_view-->
+                           <!--START: TOP_LINK_FORMAT-->
+                           <li><a href="infopage.asp?page=[link_id]" class="menu" target="[link_target]">[link_name]</a></li>
+                           <!--END: TOP_LINK_FORMAT-->
+                           <!--END: menuitems_view-->
+                           <li>
+                              <a href="/myaccount.asp" class="menu guest">
+                                 [username]
+                                 <!-- [frame_login-link-text] -->
+                              </a>
+                           </li>
+                        </ul>
+                        <a href="/view_cart.asp" class="top_links pull-right hidden-sm cart-style">
+                        <span class="icon-basket"></span>  ([SUBTOTAL])
+                        <span class="sr-only">Shopping Cart</span>
+                        </a>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <header class="site-header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-3 visible-xs  head-mobile-nav">
+                     <a href="#" id="mobile-menu-trigger">
+                        <span class="icon-menu"></span>
+                        <div></div>
+                     </a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-8 col-xs-6">
+                     <div class="logo">
+                        <a href="/">
+                        <img src="assets/images/E-Rigging-logo.svg" alt="E-Rigging Logo" />
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-md-offset-4 col-md-4 col-sm-4 welcome_buttons hidden-sm hidden-xs">
+                     <div id="searchBox" class="searchBox">
+                        <form method="get" name="searchForm" action="search.asp">
+                           <div class="search-form">
+                              <input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
+                              <button type="submit" class="search-submit btn btn-default" aria-label="Search button"><span class="icon-search"></span></button>
+                           </div>
+                        </form>
+                        <div class="clear"></div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 visible-sm tablet_buttons">
+                     <div class="row">
+                        <button type="button" id="mobile-menu-trigger2" class="pull-right btn btn-default">
+                        <span class="icon-menu"></span> Menu
+                        <span class="sr-only">Toggle navigation</span>
+                        </button>
+                        <a href="#" class="pull-right btn btn-default" data-toggle="modal" data-target="#searchModal">
+                        <span class="sr-only">Search</span>
+                        <span class="icon-search"></span> Search 
+                        </a> 
+                     </div>
+                  </div>
+                  <div class="col-xs-3 visible-xs text-center head-mobile-nav">
+                     <a href="#" class="pull-right" data-toggle="modal" data-target="#searchModal">
+                        <span class="sr-only">Search</span>
+                        <span class="icon-search"></span>
+                        <div></div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <div style="background: #04192c;padding: 12px 80px;" class="hidden-lg hidden-md hidden-xs hidden-xl"></div>
+         <section id="caTnaV" class="categoriesNav navbar-wrapper hidden-sm hidden-xs" style="transition: .3s,opacity .3s;">
+            <a href="/" class=" s-a abs-left">
+            <img src="assets/images/E-Rigging-logo.svg" alt="E-Rigging logo" class="sticky-logo" />
+            </a> 
+            <a href="/view_cart.asp" class="s-a abs-right">
+            <span class="icon-basket"></span>
+            </a> 
+           <!-- <div class="container-fluid ">-->
+                <!--<div class="col-lg-12 col-md-9 col-sm-12 all-center " >-->
+                  <!--<nav id="categories-outer" class="categories navbar-collapse collapse">-->
+                  <!--<nav id="categories-outer" class="categories" >-->
+                     <!--START: FRAME_CATEGORY-->
+                     <!--<ul id="categories" class="nav navbar-nav">-->
+                     <!--START: CATEGORIES-->
+                     <!--	<li class="[dropdown_class]">-->
+                     <!--START: CATEGORY_FORMAT-->
+                     <!--<a href="view_category.asp?cat=CATID">CATEGORY</a>-->
+                     <!--END: CATEGORY_FORMAT-->
+                     <!--START: SUB_CATEGORIES-->
+                     <!--	<ul class="dropdown-menu">
+                        <div class="container-menu">-->
+                     <!--START: SUB_CATEGORY_FORMAT-->
+                     <!--<li><a href="view_category.asp?cat=CATID" class="subcat">
+                        <div class="img"><img alt=CATEGORY src="/cdn-cgi/image/fit=scale-down,quality=60/assets/images/category-images/CATID.jpg" /></div>
+                        		CATEGORY
+                        </a></li>	-->									
+                     <!--END: SUB_CATEGORY_FORMAT-->
+                     <!--</ul>-->
+                     <!--END: SUB_CATEGORIEST-->
+                     <!--	</li>-->
+                     <!--END: CATEGORIES-->
+                     <!--</ul>-->
+                     <!--	<div class="container-menu" style="background-color: none;"> -->
+                     <!--START: SUB_CATEGORY_FORMAT-->
+                     <!--	<li><a href="view_category.asp?cat=CATID" class="subcat">
+                        <div class="img" style="width: 20%;">
+                        	<img alt=CATEGORY src="/cdn-cgi/image/fit=scale-down,quality=60/assets/images/category-images/CATID.jpg" />
+                        </div>	-->								
+                     <!--CATEGORY
+                        </a></li> -->	
+                     <!--END: SUB_CATEGORY_FORMAT-->
+                     <!-- </ul>  -->
+                     <!--END: SUB_CATEGORIES-->
+                     <!--</li> -->
+                     <!--END: CATEGORIES-->
+                     <!--</ul>	-->				
+                     <!--END: FRAME_CATEGORY col-lg-2 col-md-3-->
+                 <!-- </nav>-->
+               <!--</div>-->
+               <div class="wrapper" style="background-color: inherit;">
+                  <ul class="nav-links">
+                     <li>
+                        <a href="/Cable-Railing_c_3634.html" class="category-links">Cable Railing</a>
+                        <div class="mega-box">
+                           <div class="content" style="justify-content: space-evenly;">
+                              <div class="row"><a href="/HAAS-Cable-Railing">
+                                 <img src="cdn-cgi/image/fit=scale-down,f=auto,quality=80/assets/images/category-images/5105.jpg" class="menu-img" style="width: 250px" alt="">
+                                 <header style="font-size: 18px;">HAAS Revo</header></a>
+                              </div>
+                              <div class="row"><a href="/HAAS-Stainless-Legacy-Cable-Railing-System_c_3644.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=80/assets/images/category-images/4207jpg.jpg" class="menu-img" style="width: 250px" alt="">
+                                 <header style="font-size: 18px;">HAAS Legacy</header></a>
+                              </div>
+                           </div>
+                           <div class="view-cat-btn"><a href="/Cable-Railing_c_3634.html"><button class="mega-button">View Category</button></a></div>
+                        </div>
+                     </li>
+                     <li>
+                        <a href="/Rigging-Department_c_3687.html" class="category-links">Rigging Department</a>
+                        <div class="mega-box">
+                           <div class="content">
+                              <div class="row"><a href="/Steel-Cable-Wire-Rope_c_3688.html">
+                                 <img src="cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/3688/steel-cable-and-wire-rope.jpg" class="menu-img" alt="">
+                                 <header>Steel Cable & Rope</header></a>
+                              </div>
+                              <div class="row"><a href="/Rigging-Fittings_c_3698.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/3688/steel-cable-and-wire-rope.jpg" class="menu-img" alt="">
+                                 <header>Rigging Fittings</header></a>
+                              </div>
+                              <div class="row"><a href="/Rigging-Blocks-Sheaves_c_3791.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/3791/Rigging-Blocks-and-Sheaves.jpg" class="menu-img" alt="">
+                                 <header>Rigging Blocks & Sheaves</header></a>
+                              </div>
+                              <div class="row"><a href="/Hoists-Pullers-Grips_c_3825.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/3825/hoists-pullers-and-grips.jpg" class="menu-img" alt="">
+                                 <header>Hoists, Pullers, & Grips</header></a>
+                              </div>
+                              <div class="row"><a href="/Hoist-Rings_c_3837.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/1862/hoist-rings.jpg" class="menu-img" alt="">
+                                 <header>Hoist Rings</header></a>
+                              </div>
+                              <div class="row"><a href="/Rigging-Chain-Chain-Fittings">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/884/proof-coil-chain.jpg" class="menu-img" alt="">
+                                 <header>Rigging Chain & Chain Fittings</header></a>
+                              </div>
+                              <div class="row"><a href="/Load-Securement-Transport-Rigging_c_3870.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/3870/Load-Securement-and-Transport-Rigging.jpg" class="menu-img" alt="">
+                                 <header>Load Securement & Transport Rigging</header></a>
+                              </div>
+                              <div class="row"><a href="/Synthetic-Lifting-Slings_c_3879.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/3879/Synthetic-Lifting-Slings.jpg" class="menu-img" alt="">
+                                 <header>Synthetic Lifting Slings</header></a>
+                              </div>
+                              <div class="row"><a href="/soft-rope-and-fittings">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/3882/soft-rope-and-fittings.jpg" class="menu-img" alt="">
+                                 <header>Soft Rope & Fittings</header></a>
+                              </div>
+                              <div class="row"><a href="/security-chains-and-locks">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/2024/security-chain-and-locks.jpg" class="menu-img" alt="">
+                                 <header>Security Chain & Locks</header></a>
+                              </div>
+                              <div class="row"><a href="/Cable-Cutters-Swage-Tools-Fittings_c_3896.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/3896/Cable-Cutters-Swage-Tools-and-Fittings.jpg" class="menu-img" alt="">
+                                 <header>Cable Cutters, Swage Tools & Fittings</header></a>
+                              </div>
+                              <div class="row"><a href="/Tree-Agricultural-Rigging-Supplies_c_3906.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/3906/Tree-and-Agricultural-Rigging-Supplies.jpg" class="menu-img" alt="">
+                                 <header>Tree & Agricultural Rigging Supplies</header></a>
+                              </div>
+                           </div>
+                           <div class="view-cat-btn"><a href="/Rigging-Department_c_3687.html"><button class="mega-button">View Category</button></a></div>
+                        </div>
+                     </li>
+                     <li>
+                        <a href="/marine-department"  class="category-links">Marine Department</a>
+                        <div class="mega-box">
+                           <div class="content">
+                              <div class="row"><a href="/Anchoring-Mooring_c_3919.html">
+                                 <img src="cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/919/stainless-steel-anchoring-mooring-tn.jpg" class="menu-img" alt="">
+                                 <header>Anchoring & Mooring</header></a>
+                              </div>
+                              <div class="row"><a href="/Stainless-Marine-Rigging-Fittings_c_3954.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/3954/Stainless-Marine-Rigging-Fittings.jpg" class="menu-img" alt="">
+                                 <header>Stainless Marine Rigging Fittings</header></a>
+                              </div>
+                              <div class="row"><a href="/Stainless-Marine-Hardware_c_4025.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/1302/stainless-steel-pad-eyes-and-d-rings.jpg" class="menu-img" alt="">
+                                 <header>Stainless Marine Hardware</header></a>
+                              </div>
+                              <div class="row"><a href="/Dock-Fittings-Ladders-Folding-Steps_c_4358.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/4358/Dock-Fittings-Ladders-Folding-Steps.jpg" class="menu-img" alt="">
+                                 <header>Dock Fittings, Ladders & Folding Steps</header></a>
+                              </div>
+                              <div class="row"><a href="/Soft-Rope-Fittings_c_4059.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/3882/soft-rope-and-fittings.jpg" class="menu-img" alt="">
+                                 <header>Soft Rope & Fittings</header></a>
+                              </div>
+                              <div class="row"><a href="/Stainless-Cleaners_c_4071.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/1543/haas-stainless-cleaner-tn.jpg" class="menu-img" alt="">
+                                 <header>Stainless Cleaners</header></a>
+                              </div>
+                              <div class="row"><a href="/Thru-Hull-Deck-Fittings_c_4404.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/4404/Thru-Hull-Deck-Fittings.jpg" class="menu-img" alt="">
+                                 <header>Thru-Hull & Deck Fittings</header></a>
+                              </div>
+                           </div>
+                           <div class="view-cat-btn">  <a href="/marine-department"><button class="mega-button">View Category</button></a></div>
+                        </div>
+                     </li>
+                     <li>
+                        <a href="/stainless-steel-products"  class="category-links">Stainless Steel Products</a>						
+                        <div class="mega-box">
+                           <div class="content">
+                              <div class="row"><a href="/Haas-Stainless-Cable-Rail-System">
+                                 <img src="cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/category-images/5105.jpg" class="menu-img" alt="">
+                                 <header>HAAS Stainless Revo Cable Rail System</header></a>
+                              </div>
+                              <div class="row"><a href="/HAAS-Stainless-Legacy-Cable-Railing-System_c_3644.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/category-images/4207jpg.jpg" class="menu-img" alt="">
+                                 <header>HAAS Stainless Legacy Cable Railing System</header></a>
+                              </div>
+                              <div class="row"><a href="/Stainless-Rigging-Fittings_c_4076.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/3954/Stainless-Marine-Rigging-Fittings.jpg" class="menu-img" alt="">
+                                 <header>Stainless Rigging Fittings</header></a>
+                              </div>
+                              <div class="row"><a href="/Stainless-Chain-Chain-Fittings_c_4145.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/99/Stainless-Steel-Chain.jpg" class="menu-img" alt="">
+                                 <header>Stainless Chain & Chain Fittings</header></a>
+                              </div>
+                              <div class="row"><a href="/Stainless-Cable_c_4158.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/70/3-16-stainless-steel-1x19-cable-alt-with-HAAS-logo-tn.jpg" class="menu-img" alt="">
+                                 <header>Stainless Cable</header></a>
+                              </div>
+                              <div class="row"><a href="/Stainless-Blocks-Pulleys_c_4164.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/stainless-steel-pulley-tn.jpg" class="menu-img" alt="">
+                                 <header>Stainless Blocks & Pulleys</header></a>
+                              </div>
+                              <div class="row"><a href="/Stainless-Marine-Hardware_c_4172.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/1302/stainless-steel-pad-eyes-and-d-rings.jpg" class="menu-img" alt="">
+                                 <header>Stainless Marine Hardware</header></a>
+                              </div>
+                              <div class="row"><a href="/Stainless-Dock-Fittings-Ladders-Folding-Steps_c_4360.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/4358/Dock-Fittings-Ladders-Folding-Steps.jpg" class="menu-img" alt="">
+                                 <header>Stainless Dock Fittings, Ladders & Folding Steps</header></a>
+                              </div>
+                              <div class="row"><a href="/Anchoring-Mooring_c_4203.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/919/stainless-steel-anchoring-mooring-tn.jpg" class="menu-img" alt="">
+                                 <header>Anchoring & Mooring</header></a>
+                              </div>
+                              <div class="row"><a href="/Stainless-Thru-Hull-Deck-Fittings_c_4407.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/4404/Thru-Hull-Deck-Fittings.jpg" class="menu-img" alt="">
+                                 <header>Stainless Thru-Hull & Deck Fittings</header></a>
+                              </div>
+                              <div class="row"><a href="/Stainless-Cleaners_c_4236.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/1543/haas-stainless-cleaner-tn.jpg" class="menu-img" alt="">
+                                 <header>Stainless Cleaners</header></a>
+                              </div>
+                              <div class="row"><a href="/304-Stainless-Steel-Rigging-Fittings_c_5237.html">
+                                 <img src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/images/p/186/galvanized-eye-eye-turnbuckle_thumbnail.jpg" class="menu-img" alt="">
+                                 <header>304 Stainless Steel Rigging Fittings - Bargain Bin</header></a>
+                              </div>
+                           </div>
+                           <div class="view-cat-btn"> <a href="/stainless-steel-products"  class="category-links"><button class="mega-button">View Category</button></a></div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="hidden-sm s-a search-bar" style="right: 5%; left: auto; margin-top: 10px;">
+                  <!--START: FRAME_SEARCH-->
+                  <div id="searchBox" class="searchBox">
+                     <form method="get" name="searchForm" action="search.asp">
+                        <div class="search-form">
+                           <input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" style="width: 250px;"/>
+                           <button type="submit" class="search-submit btn btn-default" aria-label="Search button"><span class="icon-search"></span></button>
+                        </div>
+                     </form>
+                     <div class="clear"></div>
+                  </div>
+                  <!--END: FRAME_SEARCH-->
+               </div>
+            </div>
+         </section>
+      </section>
+      <!--Get current page template-->
+      [page_content]
+      <!--/Get current page template-->
+      <!-- FOOTER -->
+      <footer class="site-footer">
+         <div class="row" style="margin-bottom: 2%;">
+            <a href="/About-Us">
+               <div class="col-sm-6 no-bull-div">
+                  <img alt="erigging promise logo and slogan - fast, no bull service" src="/cdn-cgi/image/fit=scale-down,f=auto,quality=60/assets/templates/luna-core/images/home/eriggingpromisew.png" class="eriggingpromiseimg">
+               </div>
+            </a>
+            <a href="/About-Us">
+               <div class="col-sm-6 no-gimmicks-div">
+                  <p style="color: white">NO Gimmicks. NO Pop Ups. NO Clickbait. NO Bull. <br>
+                     E-Rigging guarantees top notch quality products <br> 
+                     & service from New Orleans.
+                  </p>
+               </div>
+            </a>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12" style="text-align: center;">
+                  <div class="visible-xs extrapages-shower">
+                     <!-- <a href="#extrapages" role="button" data-toggle="collapse" class="collapsed">Links</a> -->
+                  </div>
+                  <!--START: FRAME_LINKS-->
+                  <ul id="extrapages" class="list-unstyled extrapages row">
+                     <li class="label hidden">Links</li>
+                     <!--START: LINKS-->
+                     <!--START: LINK_FORMAT-->
+                     <li class="col-md-4 col-sm-4"><a href="infopage.asp?page=[link_id]&extra=1" target="[link_target]" class="menu-bottom">[link_name]</a></li>
+                     <!--END: LINK_FORMAT-->
+                     <!--END: LINKS-->
+                     <li class="col-md-4 col-sm-4">
+                        <a href="/about" target="[link_target]" class="menu-bottom">About</a>
+                     </li>
+                     <li class="col-md-4 col-sm-4">
+                        <a href="/how-to" target="[link_target]" class="menu-bottom">How To</a>
+                     </li>
+                     <li class="col-md-4 col-sm-4">
+                        <a href="/blog.asp" target="[link_target]" class="menu-bottom">Blog</a>
+                     </li>
+                     <li class="col-md-4 col-sm-4">
+                        <a href="/contact-us" target="[link_target]" class="menu-bottom">Contact</a>
+                     </li>
+                  </ul>
+                  <!--END: FRAME_LINKS-->
+               </div>
+            </div>
+            <div class="row" style="margin-top:3%">
+               <div class="col-md-12">
+                  <!--START: FRAME_MAILLIST-->
+                  <div class="mailist-box ajax-mailinglist" data-callfront="mailinglist_callfront" data-callback="mailinglist_response" style="display: none;">
+                     <form method="post" name="mailing" action="mailing_list_ajax.asp" class="row">
+                        <div class="col-sm-12 col-xs-12">
+                           <div class="mailinglist-form clearfix">
+                              <label style="display: unset;"><input class="mailinglist-input form-control" type="text" name="email" placeholder="[mailinglist_email-field]" autocomplete="off" /></label>
+                              <button class="mailinglist-submit" type="submit" name="www">
+                                 <!-- <span id="mailing-btn-txt "><i class="icon-mail"></i>[mailinglist_button]</span> -->Subscribe
+                                 <span id="mailing-btn-load" class="mailing-btn-load icon-spin2 animate-spin hidden"></span>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12">
+                           <div class="clearfix maillist-options">
+                              <div class="subscribe"><input id="list_subscribe" type="radio" name="subscribe" value="1" checked="checked"> <label for="list_subscribe">[mailinglist_subscribe]</label></div>
+                              <div class="subscribe"><input id="list_unsubscribe" type="radio" name="subscribe" value="0"> <label for="list_unsubscribe">[mailinglist_unsubscribe]</label></div>
+                           </div>
+                        </div>
+                     </form>
+                     <div id="mailinglist-response" class="mailinglist-response">
+                        <div class="mailinglist-error hidden">[mailinglist_email-error]</div>
+                        <div class="mailinglist-subscribed hidden">[mailinglist_subscribe-success]</div>
+                        <div class="mailinglist-unsubscribed hidden">[mailinglist_unsubscribe-success]</div>
+                     </div>
+                  </div>
+                  <!-- <style type="text/css">
+                     #mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;margin-bottom:10px}
+                     #mc_embed_signup .button {
+                     	background-color: #00be00;font-size: 18px;
+                     }
+                     #mc_embed_signup .button:hover {
+                     			background-color: #01a601;
+                     			cursor: pointer;
+                     		}
+                     #mc_embed_signup input.email:focus {
+                     				outline-width: 0;
+                     				background-color: #fafafa;
+                     			}					
+                     </style> -->
+                  <!-- Begin Mailchimp Signup Form -->
+                  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                  <style type="text/css">
+                     #mc_embed_signup .mc-field-group {
+                     width: auto!important;
+                     }
+                     #mc_embed_signup{ 
+                     clear:left; 
+                     font:14px Helvetica,Arial,sans-serif; 
+                     width:auto;
+                     margin-bottom:10px; 
+                     }
+                     #mc_embed_signup .mc-field-group {
+                     padding: 0!important;
+                     }
+                     #mc_embed_signup .button {
+                     background-color: #00be00;
+                     font-size: 18px;
+                     margin: 0 10px;
+                     height: 39px;
+                     }
+                     #mc_embed_signup .button:hover {
+                     background-color: #01a601;
+                     cursor: pointer;
+                     display: flex;
+                     }
+                     #mc_embed_signup input.email:focus {
+                     outline-width: 0;
+                     background-color: #fafafa;
+                     }		
+                     #mc_embed_signup .mc-field-group input {
+                     width: 300px;
+                     font-size: 18px;
+                     color: grey;
+                     }
+                     #mc_embed_signup_scroll{
+                     display: flex;
+                     }
+                     @media only screen and (max-width: 600px) {
+                     #mc_embed_signup .mc-field-group input {
+                     width: 200px;
+                     }
+                     }
+                  </style>
+                  <div style="display: flex!important; 
+                     align-items: center; 
+                     justify-content: center;">
+                     <div id="mc_embed_signup" >
+                        <label for="mce-EMAIL">Subscribe to receive Offers, Discounts and News from E-rigging.com</label>
+                        <form action="https://E-Rigging.us18.list-manage.com/subscribe/post?u=79ae2d8078facdd05bd62257b&amp;id=3e01be8372" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                           <div id="mc_embed_signup_scroll">
+                              <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
+                              <div class="mc-field-group">
+                                 <!-- <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label> -->
+                                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address" >			
+                              </div>
+                              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                           </div>
+                           <div id="mce-responses" class="clear">
+                              <div class="response" id="mce-error-response" style="display:none"></div>
+                              <div class="response" id="mce-success-response" style="display:none"></div>
+                           </div>
+                           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                           <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                              <input type="text" name="b_79ae2d8078facdd05bd62257b_3e01be8372" tabindex="-1" value="">
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                  <!--End mc_embed_signup-->
+               </div>
+            </div>
+            <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+            <!-- End TrustBox script -->
+            <div class="trustpilot-section">
+               <!-- TrustBox widget - Carousel -->
+               <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="5a797495083a4b00016dba93" data-style-height="140px" data-style-width="100%" data-theme="dark" data-stars="4,5" data-review-languages="en">
+                  <a href="https://www.trustpilot.com/review/e-rigging.com" target="_blank" rel="noopener">Trustpilot</a>
+               </div>
+               <!-- End TrustBox widget -->
+            </div>
+            <div class="col-sm-12">
+               <!--START: global_footer-->
+               <div class="global-footer">
+                  <!--START: social_icons-->
+                  <ul class="social-icons list-unstyled list-inline">
+                     <li class="social-icons-label hidden">Follow Us</li>
+                     <!--START: social_link_blog-->
+                     <li><a href="[social_link_blog_url]" class="blog" rel="noopener" target="_blank" title="Subscribe to our Blog"><span class="icon-rss"></span></a></li>
+                     <!--END: social_link_blog-->
+                     <!--START: social_link_facebook-->
+                     <li><a href="[social_link_facebook_url]" class="facebook" rel="noopener" target="_blank" title="Like Us on Facebook"><span class="icon-facebook"></span></a></li>
+                     <!--END: social_link_facebook-->
+                     <!--START: social_link_pinterest-->
+                     <li><a href="[social_link_pinterest_url]" class="pinterest" rel="noopener" target="_blank" title="Follow Us on Pinterest"><span class="icon-pinterest"></span></a></li>
+                     <!--END: social_link_pinterest-->
+                     <!--START: social_link_twitter-->
+                     <li><a href="[social_link_twitter_url]" class="twitter" rel="noopener" target="_blank" title="Follow Us on Twitter"><span class="icon-twitter"></span></a></li>
+                     <!--END: social_link_twitter-->
+                     <!--START: social_link_googleplus-->
+                     <li><a href="[social_link_googleplus_url]" class="gplus" rel="noopener" target="_blank" title="Follow Us on Google+"><span class="icon-gplus"></span></a></li>
+                     <!--END: social_link_googleplus-->
+                     <!--START: social_link_youTube-->
+                     <li><a href="[social_link_youTube_url]" class="youtube" rel="noopener" target="_blank" title="Subscribe to our Channel"><span class="icon-youtube"></span></a></li>
+                     <!--END: social_link_youTube-->
+                     <!--START: social_link_instagram-->
+                     <li><a href="[social_link_instagram_url]" class="instagram" rel="noopener" target="_blank" title="Follow Us on Instagram"><span class="icon-instagram"></span></a></li>
+                     <!--END: social_link_instagram-->
+                     <!--START: social_link_tumblr-->
+                     <li><a href="[social_link_tumblr_url]" class="tumblr" rel="noopener" target="_blank" title="Follow Us on Tumblr"><span class="icon-tumblr"></span></a></li>
+                     <!--END: social_link_tumblr-->
+                  </ul>
+                  <!--END: social_icons-->
+               </div>
+               <!--END: global_footer-->
+            </div>
+         </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <div class="copyright_txt">
+                        <p>[frame_copyright1]</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <a href="#" class="scrollToTop"><i class="icon-angle-up icon-2x"></i> <span>TOP</span></a>
+      <nav id="mobile-menu" class="mobile-menu">
+         <div class="mobile-menu-inner" tabindex="0">
             <div class="mobile-menu-close">
-                <a href="#"></a>
+               <a href="#"></a>
             </div>
             <div class="mobile-menu-widget">
-                <h3>Categories</h3>
-                <div id="mobile-categories"></div>
+               <h3>Categories</h3>
+               <div id="mobile-categories"></div>
             </div>
             <div class="mobile-menu-widget">
-                <h3>Menu Links</h3>
-                <div id="mobile-menulinks"></div>
+               <h3>Menu Links</h3>
+               <div id="mobile-menulinks"></div>
             </div>
             <div class="mobile-menu-widget hidden">
-                <h3>Contact Us</h3>
-            	<div><a href="mailto:[store_email]"><i class="icon-mail"></i> [store_email]</a></div>
-            	<div><a href="tel:[store_phone]"><i class="icon-phone"></i>[store_phone]</a></div>
-			</div>
-        </div>
-    </nav>
-
-	<!--START: shopping_cart-->
-	<div id="floating-cart" class="floating-cart">
-		<a href="view_cart.asp" class="minicart-inner clearfix">
-			<span class="icon-basket cart-icon"></span>
-			<span class="cart-details">
-				<span class="minicart-items">[ITEMSINCART]</span> Items
-			</span>
-		</a>
-	</div>
-	<!--END: shopping_cart-->
-
-	<!--START: quickview_modal-->
-	[quickview_modal]
-	<!--END: quickview_modal-->
-   
-    <!-- Modal -->
-    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                
-                <div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: none;">
-                        <span aria-hidden="true">&times;</span>
-                    </button>  
-					<div id="searchBox" class="searchBox">
-						<form method="get" name="searchForm" action="search.asp">
-							<div class="search-form">
-								<input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
-								<button type="submit" class="search-submit btn btn-default" aria-label="Search button"><span class="icon-search"></span></button>
-							</div>
-						</form>
-						<div class="clear"></div>
-					</div>
-
-                   
-                </div>
+               <h3>Contact Us</h3>
+               <div><a href="mailto:[store_email]"><i class="icon-mail"></i> [store_email]</a></div>
+               <div><a href="tel:[store_phone]"><i class="icon-phone"></i>[store_phone]</a></div>
             </div>
-        </div>
-    </div>
-
-	  <link rel="preload" href="assets/templates/common-core/lib/fontello/css/fontello.css" as="style" crossorigin /> 
-	  <link rel="stylesheet" href="assets/templates/common-core/lib/fontello/css/fontello.css" crossorigin /> 
-	  <!--search Icons & Cart Icons-->
-	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	  <!-- Rating Stars & Catalog section -->
-    <!-- <link rel="stylesheet" href="assets/templates/common-core/lib/fontello/css/animation.css" type="text/css" />  -->
-    <!-- <link rel="stylesheet" href="/assets/templates/common-core/lib/animate-me/animate.css" type="text/css" media="screen" /> -->
-
-	<!--START: page_scripts-->	
-
-	<script src="assets/templates/[template]/js/lib/luxon.min.js"></script>
-	<script src="assets/templates/common-core/lib/jquery.min.js"></script>
-	<script src="assets/templates/common-core/lib/jquery.min.js"></script>
-	<script src="assets/templates/common-core/lib/jquery-migrate-3.0.1.min.js"></script>
-    <script src="assets/templates/common-core/lib/bootstrap/js/bootstrap.js"></script>
-	<script src="assets/templates/[template]/js/lib/jquery.waypoints.js"></script>
-    <script src="assets/templates/common-core/js/core.js"></script>
-	<script src="assets/templates/[template]/js/lib/jquery.hoverIntent.js"></script>    
-	<script src="assets/templates/[template]/js/main.js"></script>
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" />
-	 <!-- image modal -->
-	[page_scripts]
-	<!--END: page_scripts-->
-
-    <!--START: quicksearch-->
-    <link rel="stylesheet" href="assets/templates/common-html5/quicksearch/quicksearch.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="assets/templates/common-html5/quicksearch/jquery.quicksearch.js"></script>
-    <script type="text/javascript">
-        jQuery(function () {
-            jQuery('#searchlight').searchlight('/search_quick.asp');
-        });
-    </script>
-    <!--END: quicksearch-->
-
-	<script>
-		if ($("#listing a").length < 1) { 
-		// add magnific popup to all images except product images
-		jQuery('a[href$="jpg"], a[href$="jpeg"], a[href$="png"], a[href$="gif"]').not('[data-disable-popup="true"]').magnificPopup({
-			type:'image',
-			titleSrc: 'title'
-		});
-		}
-	</script>
-
-	<!--START: 3dcart stats-->
-	<div class="stats hidden"> 
-		<script type="text/javascript">
-			//<![CDATA[
-			var file='/stats/count.asp';
-			var stats_d=new Date();
-			var stats_s=stats_d.getSeconds();
-			var stats_m=stats_d.getMinutes();
-			var stats_x=stats_s*stats_m;
-			var prdID = '[catalogid]';
-			var catID = '[catid]';
-			stats_f='' + escape(document.referrer); stats_f=stats_f.replace('_','----');
-			if (navigator.appName=='Netscape'){stats_b='NS';}
-			if (navigator.appName=='Microsoft Internet Explorer'){stats_b='MSIE';}
-			if (navigator.appVersion.indexOf('MSIE 3')>0) {stats_b='MSIE';}
-			stats_u='' + escape(document.URL); stats_u=stats_u.replace('_','----'); stats_w=screen.width; stats_h=screen.height;
-			stats_v=navigator.appName;
-			stats_fs = window.screen.fontSmoothingEnabled;
-			if (stats_v != 'Netscape') {stats_c=screen.colorDepth;}
-			else {stats_c=screen.pixelDepth;}
-			stats_j=navigator.javaEnabled();
-			info='w=' + stats_w + '&h=' + stats_h + '&c=' + stats_c + '&r=' + stats_f + '&u='+ stats_u + '&fs=' + stats_fs + '&b=' + stats_b + '&x=' + stats_x + '&cat=' + catID + '&prd=' + prdID;
-			document.write('<img src="' + file + '?'+info+ '" width="1" height="1" border="0" alt="stats" />');
-			//]]>
-		</script>
-		<noscript>
-			<img src="/stats/count.asp" width="90" height="30" alt="3dcart Stats Tracker" />
-		</noscript>
-		<script defer>
-
-
-jQuery(document).ready(function () {
-	var respWidth = window.innerWidth;
-	     if (respWidth <= 1160) {
-		$('.subcategories ul').removeClass('columns-6').addClass('columns-3'); 
-		 } 
-	
-	});
-</script> 
-<script defer> 
-
-	$(document).ready(function(){$(".container-menu:eq(0)").addClass("dropdown-1"),$(".container-menu:eq(0)").css({"background-color":"white",height:"25vh",width:"55vw","min-height":"600px",padding:"20px",left:"-35%",position:"relative",display:"flex","flex-flow":"row wrap","text-align":"center",overflow:"auto"}),$(".container-menu:eq(1)").addClass("dropdown-2"),$(".container-menu:eq(1)").css({"background-color":"white",height:"55vh",width:"55vw","min-height":"600px",padding:"20px",left:"-35%",position:"relative",display:"flex","flex-flow":"row wrap","text-align":"center"}),$(".container-menu:eq(2)").addClass("dropdown-3"),$(".container-menu:eq(2)").css({"background-color":"white",height:"25vh",width:"35vw","min-height":"500px",padding:"20px",left:"-35%",position:"relative",display:"flex","flex-flow":"row wrap","text-align":"center"}),$(".container-menu:eq(3)").addClass("dropdown-4"),$(".container-menu:eq(3)").css({"background-color":"white",height:"25vh",width:"55vw","min-height":"500px",padding:"20px",left:"-75%",position:"relative",display:"flex","flex-flow":"row wrap","text-align":"center"}),$(".container-menu:eq(4)").addClass("dropdown-5"),$(".container-menu:eq(4)").css({"background-color":"white",height:"45vh !important",width:"55vw","min-height":"500px",padding:"20px",left:"-365%",position:"relative",display:"flex","flex-flow":"row wrap","text-align":"center"})});
-
-</script>
-<script defer>
-
-
-$(".products-section").waypoint(function(){$(".products-section").addClass("animated"),$(".products-section").addClass("fadeIn")},{offset:"100%"}),$(".pro-content-holder").waypoint(function(){$(".pro-content-holder").addClass("animated"),$(".pro-content-holder").addClass("zoomIn")},{offset:"100%"}),$(".no-bull-div img").waypoint(function(){$(".no-bull-div img").addClass("animated"),$(".no-bull-div img").addClass("fadeInLeft"),$(".no-bull-div img").css("float","right")},{offset:"100%"}),$(".no-gimmicks-div p").waypoint(function(){$(".no-gimmicks-div p").addClass("animated"),$(".no-gimmicks-div p").addClass("fadeInRight")},{offset:"100%"});
-			
-	
-
-
-</script>
-	</div>
-	<!--END: 3dcart stats-->
-</body>
+         </div>
+      </nav>
+      <!--START: shopping_cart-->
+      <div id="floating-cart" class="floating-cart">
+         <a href="view_cart.asp" class="minicart-inner clearfix">
+         <span class="icon-basket cart-icon"></span>
+         <span class="cart-details">
+         <span class="minicart-items">[ITEMSINCART]</span> Items
+         </span>
+         </a>
+      </div>
+      <!--END: shopping_cart-->
+      <!--START: quickview_modal-->
+      [quickview_modal]
+      <!--END: quickview_modal-->
+      <!-- Modal -->
+      <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: none;">
+                  <span aria-hidden="true">&times;</span>
+                  </button>  
+                  <div id="searchBox" class="searchBox">
+                     <form method="get" name="searchForm" action="search.asp">
+                        <div class="search-form">
+                           <input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
+                           <button type="submit" class="search-submit btn btn-default" aria-label="Search button"><span class="icon-search"></span></button>
+                        </div>
+                     </form>
+                     <div class="clear"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <link rel="preload" href="assets/templates/common-core/lib/fontello/css/fontello.css" as="style" crossorigin />
+      <link rel="stylesheet" href="assets/templates/common-core/lib/fontello/css/fontello.css" crossorigin />
+      <!--search Icons & Cart Icons-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      <!-- Rating Stars & Catalog section -->
+      <!-- <link rel="stylesheet" href="assets/templates/common-core/lib/fontello/css/animation.css" type="text/css" />  -->
+      <!-- <link rel="stylesheet" href="/assets/templates/common-core/lib/animate-me/animate.css" type="text/css" media="screen" /> -->
+      <!--START: page_scripts-->	
+      <script src="assets/templates/[template]/js/lib/luxon.min.js"></script>
+      <script src="assets/templates/common-core/lib/jquery.min.js"></script>
+      <script src="assets/templates/common-core/lib/jquery.min.js"></script>
+      <script src="assets/templates/common-core/lib/jquery-migrate-3.0.1.min.js"></script>
+      <script src="assets/templates/common-core/lib/bootstrap/js/bootstrap.js"></script>
+      <script src="assets/templates/[template]/js/lib/jquery.waypoints.js"></script>
+      <script src="assets/templates/common-core/js/core.js"></script>
+      <script src="assets/templates/[template]/js/lib/jquery.hoverIntent.js"></script>    
+      <script src="assets/templates/[template]/js/main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" />
+      <!-- image modal -->
+      [page_scripts]
+      <!--END: page_scripts-->
+      <!--START: quicksearch-->
+      <link rel="stylesheet" href="assets/templates/common-html5/quicksearch/quicksearch.css" type="text/css" media="screen" />
+      <script type="text/javascript" src="assets/templates/common-html5/quicksearch/jquery.quicksearch.js"></script>
+      <script type="text/javascript">
+         jQuery(function () {
+             jQuery('#searchlight').searchlight('/search_quick.asp');
+         });
+      </script>
+      <!--END: quicksearch-->
+      <script>
+         if ($("#listing a").length < 1) { 
+         // add magnific popup to all images except product images
+         jQuery('a[href$="jpg"], a[href$="jpeg"], a[href$="png"], a[href$="gif"]').not('[data-disable-popup="true"]').magnificPopup({
+         	type:'image',
+         	titleSrc: 'title'
+         });
+         }
+      </script>
+      <!--START: 3dcart stats-->
+      <div class="stats hidden">
+         <script type="text/javascript">
+            //<![CDATA[
+            var file='/stats/count.asp';
+            var stats_d=new Date();
+            var stats_s=stats_d.getSeconds();
+            var stats_m=stats_d.getMinutes();
+            var stats_x=stats_s*stats_m;
+            var prdID = '[catalogid]';
+            var catID = '[catid]';
+            stats_f='' + escape(document.referrer); stats_f=stats_f.replace('_','----');
+            if (navigator.appName=='Netscape'){stats_b='NS';}
+            if (navigator.appName=='Microsoft Internet Explorer'){stats_b='MSIE';}
+            if (navigator.appVersion.indexOf('MSIE 3')>0) {stats_b='MSIE';}
+            stats_u='' + escape(document.URL); stats_u=stats_u.replace('_','----'); stats_w=screen.width; stats_h=screen.height;
+            stats_v=navigator.appName;
+            stats_fs = window.screen.fontSmoothingEnabled;
+            if (stats_v != 'Netscape') {stats_c=screen.colorDepth;}
+            else {stats_c=screen.pixelDepth;}
+            stats_j=navigator.javaEnabled();
+            info='w=' + stats_w + '&h=' + stats_h + '&c=' + stats_c + '&r=' + stats_f + '&u='+ stats_u + '&fs=' + stats_fs + '&b=' + stats_b + '&x=' + stats_x + '&cat=' + catID + '&prd=' + prdID;
+            document.write('<img src="' + file + '?'+info+ '" width="1" height="1" border="0" alt="stats" />');
+            //]]>
+         </script>
+         <noscript>
+            <img src="/stats/count.asp" width="90" height="30" alt="3dcart Stats Tracker" />
+         </noscript>
+         <script defer>
+            jQuery(document).ready(function () {
+            	var respWidth = window.innerWidth;
+            	     if (respWidth <= 1160) {
+            		$('.subcategories ul').removeClass('columns-6').addClass('columns-3'); 
+            		 } 
+            	
+            	});
+         </script> 
+         <script defer> 
+            $(document).ready(function(){
+            	$(".container-menu:eq(0)").addClass("dropdown-1"),
+            	$(".container-menu:eq(0)").css({
+            		"background-color":"white",
+            		height:"25vh",
+            		width:"100vw",
+            		"min-height":"600px",
+            		padding:"20px",
+            		left:"0%",
+            		position:"relative",
+            		display:"flex",
+            		"text-align":"center",
+            		overflow:"auto",
+            	}),
+            	$(".container-menu:eq(1)").addClass("dropdown-2"),
+            	$(".container-menu:eq(1)").css({
+            		"background-color":"white",
+            		height:"55vh",
+            		"min-height":"600px",
+            		padding:"20px",
+            		left:"-35%",
+            		position:"relative",
+            		display:"flex",
+            		"text-align":"center",
+            		"flex-wrap": "wrap"
+            	}),
+            		$(".container-menu:eq(2)").addClass("dropdown-3"),
+            		$(".container-menu:eq(2)").css({
+            			"background-color":"white",
+            		height:"25vh",
+            		"min-height":"500px",
+            		padding:"20px",
+            		left:"-35%",
+            		position:"relative",
+            		display:"flex",
+            		"text-align":"center",
+            		"flex-wrap": "wrap"
+            	}),
+            		$(".container-menu:eq(3)").addClass("dropdown-4"),
+            		$(".container-menu:eq(3)").css({"background-color":"white",
+            		height:"25vh",
+            		"min-height":"500px",
+            		padding:"20px",
+            		left:"-75%",
+            		position:"relative",
+            		display:"flex",
+            		"text-align":"center",
+            		"flex-wrap": "wrap"
+            	}),
+            		$(".container-menu:eq(4)").addClass("dropdown-5"),
+            		$(".container-menu:eq(4)").css({
+            		"background-color":"white",height:"45vh !important",
+            		
+            		"min-height":"500px",
+            		padding:"20px",
+            		left:"-365%",
+            		position:"relative",
+            		display:"flex",
+            		"text-align":"center",
+            		"flex-wrap": "wrap"
+            	})});
+            
+         </script>
+         <script defer>
+            $(".products-section").waypoint(function(){$(".products-section").addClass("animated"),$(".products-section").addClass("fadeIn")},{offset:"100%"}),$(".pro-content-holder").waypoint(function(){$(".pro-content-holder").addClass("animated"),$(".pro-content-holder").addClass("zoomIn")},{offset:"100%"}),$(".no-bull-div img").waypoint(function(){$(".no-bull-div img").addClass("animated"),$(".no-bull-div img").addClass("fadeInLeft"),$(".no-bull-div img").css("float","right")},{offset:"100%"}),$(".no-gimmicks-div p").waypoint(function(){$(".no-gimmicks-div p").addClass("animated"),$(".no-gimmicks-div p").addClass("fadeInRight")},{offset:"100%"});
+            			
+            	
+            
+            
+         </script>
+         <script>
+            $('.megacable').hover(
+             function(){ $('.mega-cable').addClass('showmegacable') },
+             function(){ $('.mega-cable').removeClass('showmegacable') }
+            )
+         </script>
+      </div>
+      <!--END: 3dcart stats-->
+   </body>
 </html>

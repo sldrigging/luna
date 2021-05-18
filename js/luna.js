@@ -51,3 +51,12 @@ $("#read-more").click(function() {
       scrollTop: $("#extended-description").offset().top -120
   }, 2000);
 });
+
+$("#qty-sticky").click(function() {
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $("#qty-0").offset().top -120
+  }, 2000);
+});
+
+// mega menu
+

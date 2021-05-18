@@ -1,23 +1,11 @@
-/* old lai convert gardai */
 html,body {
     height: 100%
 }
-body, html, p, h1,h2,h3,h4,h5,a{
-    font-family: 'Lato', sans-serif;
-    font-display: swap;
-  }
-  html,body {
-    height: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
+
 body {
     display: flex;
     height: 100%;
-    flex-direction: column;
-    background: #fff;
-    color: #000;
-    line-height: 1.5
+    flex-direction: column
 }
 
 .page-content {
@@ -27,37 +15,12 @@ body {
 footer {
     flex-shrink: 0
 }
-.homepage-blog-posts .post-image-container img {
-    height: 230px;
-}
-.product-items.productList .product-item .img a {
-    position: initial;
-}
-.product-items.productList .product-item .img {
-    border:1px solid #ececec;
-}
-.product-items.productList .product-item .product-content {
-    text-align: left;
-}
-.homepage-blog-posts div#postContent {
-    height: 129px;
-}
-.product-items.productList .product-item .action {
-    text-align: right;
-}
-.product-items.productList .product-item-container {
-    border: none;
-}
-@media(max-width:767px){
-	.homepage-blog-posts div#postContent{
-		height:auto;
-	}
-}
-@media (max-width: 991px){
-.product-items.productList .product-item .img {
-    padding-right: 0;
-    width: 32%;
-}
+
+body {
+    font-family: roboto,sans-serif;
+    background: #fff;
+    color: #000;
+    line-height: 1.5
 }
 
 body:not('.checkout-1') {
@@ -481,7 +444,7 @@ body.home-page .header-navigation {
 
 #categories.navbar-nav>li>a {
     font-family: 'Lato', sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     letter-spacing: .5px;
     font-weight: 400;
     padding: 0 12px;
@@ -831,7 +794,7 @@ body.home-page .header-navigation {
 
 @media(min-width: 992px) {
     .logo {
-        height:75px;
+        height:100px;
         margin: 0
     }
 }
@@ -1298,13 +1261,14 @@ ul.extrapages li a i {
 }
 
 .copyright {
-    border-top: 1px solid #001a2a;
+    border-top: 1px solid #e4e4e4;
+    margin-top: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: #001a2a;
+    background: #e4e4e4;
     text-align: center;
     color: #fff;
-    font-size: 13px!important;
+    font-size: 13px;
     font-weight: 400;
     line-height: 1.5em
 }
@@ -1316,7 +1280,7 @@ ul.extrapages li a i {
 }
 
 .copyright a {
-    color: #fff
+    color: #000
 }
 
 .copyright_txt {
@@ -2708,7 +2672,7 @@ body.view-cart .middle-grid,body.my-account .middle-grid {
 }
 
 .sticky-shrink .stuck .header-main {
-    transition: height .4s
+    transition: height .8s
 }
 
 @-webkit-keyframes stuckMoveDown {

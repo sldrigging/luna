@@ -42,7 +42,8 @@ img {
 
 .sticky-logo {
   width: 180px;
-  padding: 0px 10px; }
+  padding: 0px 10px;
+  margin-top: 10px; }
 
 @media only screen and (max-width: 830px) {
   .card {
@@ -80,6 +81,87 @@ img {
   background-color: #344c62;
   margin: 1%; }
 
+.mega-menu div {
+  padding: 0px 20px; }
+
+.mega-menu div:hover {
+  border-bottom: 3px solid #00be00; }
+
+.mega-cable {
+  display: none; }
+
+.mega-rigging {
+  display: none; }
+
+.mega-marine {
+  display: none; }
+
+.mega-stainless {
+  display: none; }
+
+.showmegacable {
+  display: block;
+  animation: fade_megamenu 0.5s; }
+
+@keyframes fade_megamenu {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+/**** mega menu *****/
+.dropdown-1, .dropdown-3 {
+  left: 0 !important; }
+
+.dropdown-4 {
+  left: 0 !important; }
+
+.dropdown-2 {
+  left: 0 !important; }
+
+.dropdown-1, .dropdown-3, .dropdown-2, .dropdown-4 {
+  height: 40vh; }
+
+.dropdown-menu a {
+  font-size: 12px;
+  padding: 0; }
+
+.mega-menu-btn {
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600; }
+
+.dropdown-menu li {
+  margin: 0 !important; }
+
+.dropdown-menu img {
+  width: 150px !important; }
+
+.dropdown a span {
+  font-size: 16px;
+  font-weight: bold; }
+
+.dropdown-1 img {
+  min-height: 300px !important;
+  min-width: 300px !important; }
+
+.dropdown-menu {
+  width: 0; }
+
+.dropdown-1 li {
+  margin: 10px 80px !important; }
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  /**** mega menu ****/
+  .dropdown-3 {
+    left: -50px; } }
+@media screen and (max-width: 992px) {
+  .dropdown-menu {
+    top: 44px; } }
 .title {
   font-size: 40px;
   text-align: center;

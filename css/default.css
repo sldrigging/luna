@@ -65,8 +65,6 @@ footer {
 }
 body {
     font-family: 'Lato', sans-serif;
-    background: #fff;
-    color: #000;
     line-height: 1.5
 }
 
@@ -387,7 +385,7 @@ body.home-page .header-navigation {
     border-bottom: 0 solid #c6c6c6;
     margin-bottom: 0;
     background: #04192c;
-    padding: 12px 80px;
+    padding: 0px 80px;
     display: flex;
 }
 
@@ -481,21 +479,29 @@ body.home-page .header-navigation {
     background: 0 0;
     color: #dad6d6
 }
+.dropdown{
+    display: flex;
+    justify-content: center;
+     display: none; 
+    /* for customized mega menu */
+}
 .navbar-nav>li>.dropdown-menu {
     position: absolute;
     top: 100%;
-    left: auto;
-    right: auto;
-    background: #04192c;
-    border: 0 solid #04192c;
+    /* left: 0!important; */
+    right: 0!important;
+    /* background: #fff; */
     border-top: 10px solid #04192c;
     padding: 0;
-    width: auto;
+    width: 1200px!important;
     max-width: none;
     overflow: hidden;
     display: none;
+    /* left: -200%; */
     color: #fff;
+    height: 400px;
 }
+
 
 .navbar-nav>li.dropdown>a:after {
     content: "\f107";

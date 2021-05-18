@@ -39,28 +39,22 @@
   </div>
 </div>
 <div class="col-sm-2">  
-     <!--START: qtybox-->
-     <!-- <label>[product_quantity]</label>
-     <label class="qty-input">
-         <input id="qty-0" type="text" name="qty-0" value="[minimumorder_product]" class="form-control" 
-         onchange="validateValues(document.add,1);"
-          />
-         <span class="qty-nav">
-             <button type="button" class="qty-up" data-target="#qty-0">+</button>
-             <button type="button" class="qty-down" data-target="#qty-0">-</button>
-         </span>
-     </label> -->
-     <!--END: qtybox-->
+ <!--START: qtybox-->
+ <label>[product_quantity]</label>
+ <label class="qty-input">
+     <p class="form-control sticky-qty">5</p>
      
+ </label>
+ <!--END: qtybox-->
       <button
         type="button"
-        id="Add"
-        class="btn btn-default btn-inverse btn-addcart"
+        id="s"
+        class="btn btn-default btn-inverse btn-addcart sticky-add"
         onclick="check_and_add(document.add);"
       >
         <i class="icon-basket" role="presentation"></i>
         ADD TO CART
-      </button>            
+      </button> 
 </div>
 </div>
 
@@ -761,8 +755,8 @@
                                 <label class="qty-input">
                                     <input id="qty-0" type="text" name="qty-0" value="[minimumorder_product]" class="form-control"   onchange="validateValues(document.add,1);" />
                                     <span class="qty-nav">
-                                        <button type="button" class="qty-up" data-target="#qty-0">+</button>
-                                        <button type="button" class="qty-down" data-target="#qty-0">-</button>
+                                        <button type="button" class="qty-up" data-target="#qty-0" onclick="updateAddQty();">+</button>
+                                        <button type="button" class="qty-down" data-target="#qty-0" onclick="updateSubQty();">-</button>
                                     </span>
                                 </label>
                                 <!--END: qtybox-->
@@ -2311,8 +2305,21 @@ function checkPrevPurch(userId, caId) {
 <link rel="stylesheet" href="/assets/templates/luna-core/css/listing.css" type="text/css" media="screen" />
 <!--END: template_styles-->
 
-<!-- <script>
-    function updateQty(x){
-        validateValues(document.add,1);
+<script>  
+
+    function updateAddQty(){
+        var qty = $('#qty-0')[0].value;
+    qty = parseInt(qty);
+         $('.sticky-qty').html(qty+1);
     }
-</script> -->
+    function updateSubQty(){ 
+        var qty = $('#qty-0')[0].value;
+    qty = parseInt(qty);       
+        if (qty = 1){
+            $('.sticky-qty').html(qty);
+        }
+        else{
+            $('.sticky-qty').html(qty-1);
+        }       
+    }    
+</script>
