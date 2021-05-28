@@ -8,7 +8,7 @@
 <div class="col-sm-2" style="text-align: center">
   <img    src="thumbnail.asp?file=[image1]&maxx=108&maxy=108"    alt="[imagecaption1]"    style="width: 100px; height: auto"  />
 </div>
-<div class="col-sm-5">
+<div class="col-sm-3" >
   <p style="font-size: 18px; margin-bottom: 5px">[h1_tag]</p>
   <div style="margin-left: -9%; display: inline-block">
     <!-- TrustBox widget - Product Mini MultiSource -->
@@ -38,14 +38,17 @@
     <meta itemprop="price" content="[price_without_currency]" />
   </div>
 </div>
-<div class="col-sm-2">  
- <!--START: qtybox-->
- <label>[product_quantity]</label>
- <label class="qty-input">
-     <p class="form-control sticky-qty">5</p>
-     
- </label>
- <!--END: qtybox-->
+<div class="col-sm-2 sticky-qty-label" style="margin-top: 1.5%; display: flex; justify-content: flex-end; align-items: center;">  
+    <!--START: qtybox-->
+    <label>[product_quantity]</label>
+    <label class="qty-input">
+        <p class="form-control sticky-qty" style="width: 50%;">1</p>
+        
+    </label>
+    <!--END: qtybox-->
+    </div>
+
+<div class="col-sm-2" style="margin-top: 1.5%;">  
       <button
         type="button"
         id="s"
@@ -753,7 +756,7 @@
                                 <!--START: qtybox-->
                                 <label>[product_quantity]</label>
                                 <label class="qty-input">
-                                    <input id="qty-0" type="text" name="qty-0" value="[minimumorder_product]" class="form-control"   onchange="validateValues(document.add,1);" />
+                                    <input id="qty-0" type="text" name="qty-0" value="[minimumorder_product]" class="form-control"   onchange="validateValues(document.add,1); checkQtyVal();" />
                                     <span class="qty-nav">
                                         <button type="button" class="qty-up" data-target="#qty-0" onclick="updateAddQty();">+</button>
                                         <button type="button" class="qty-down" data-target="#qty-0" onclick="updateSubQty();">-</button>
@@ -2305,21 +2308,4 @@ function checkPrevPurch(userId, caId) {
 <link rel="stylesheet" href="/assets/templates/luna-core/css/listing.css" type="text/css" media="screen" />
 <!--END: template_styles-->
 
-<script>  
 
-    function updateAddQty(){
-        var qty = $('#qty-0')[0].value;
-    qty = parseInt(qty);
-         $('.sticky-qty').html(qty+1);
-    }
-    function updateSubQty(){ 
-        var qty = $('#qty-0')[0].value;
-    qty = parseInt(qty);       
-        if (qty = 1){
-            $('.sticky-qty').html(qty);
-        }
-        else{
-            $('.sticky-qty').html(qty-1);
-        }       
-    }    
-</script>
