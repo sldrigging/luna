@@ -40,17 +40,17 @@ nav .wrapper{
   padding: 10px 0;
 }
 .nav-links li a{
-  color: #f2f2f2;
+  color: #fff;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 8px 25px;
 }
 .nav-links li a.category-links:hover{
-  border-bottom:4px solid #00be00;   
+  border-bottom:3px solid #00be00;   
   margin-bottom: -4px;
 }
 .nav-links .mobile-item{
@@ -70,7 +70,7 @@ nav .wrapper{
 .nav-links li:hover .drop-menu,.category-links:hover,
 .nav-links li:hover .mega-box{
  transition: all 0.3s ease; 
-  top: 62px;
+  top: 63px;
   opacity: 1;
   visibility: visible;
 }
@@ -88,6 +88,8 @@ nav .wrapper{
   padding: 0 30px;
   top: 60px;
   opacity: 0;
+  width: 80%;
+  left: 11%;
   visibility: hidden;
 }
 .mega-box .content{
@@ -105,6 +107,14 @@ nav .wrapper{
   text-align: center;
   /* padding: 0px 10px; */
   margin: 1px;
+}
+@media only screen and (max-width: 1175px){
+  .mega-box .content {
+    margin-top: -5px;
+  }
+  .content .row header{
+    font-size: 12px;
+  }
 }
 /*
 .content .row img{
@@ -262,6 +272,12 @@ nav input{
   width:120px;
   height: auto;
 }
+@media only screen and (max-width: 1500px) {
+  .menu-img {
+    width: 70px;
+  }
+}
+
 .mega-button{
   background-color: #00be00;
   padding: 10px 20px;

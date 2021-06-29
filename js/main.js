@@ -282,8 +282,8 @@ function myStickyNavbar() {
   } else {
     // $(".navbar-header").removeClass("collapse in").removeAttr("style");
     $(".categoriesNav").removeClass("stuck");
-    // $(".navbar-header,.site-header").removeClass("stuck");
-    // $(".sticky-jump").removeClass("sticky-on");
+     $(".navbar-header,.site-header").removeClass("stuck");
+     $(".sticky-jump").removeClass("sticky-on");
     $(".s-a").removeClass("s-b");
     // $("body").css("padding-top", 0);
     // $(".categoriesNav").css("top", 0);

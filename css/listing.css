@@ -101,7 +101,9 @@ div.short-description{
     max-height: 300px;
  }
  
-
+.product-manual{
+    padding-left: 10px;
+}
 
 .catalog-info{
     margin: 10px 0px;
@@ -154,7 +156,7 @@ height: auto;
       display: none!important;
     }
   }
-.short-description{
+.short-desc{
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 2;

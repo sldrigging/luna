@@ -9,6 +9,8 @@ $(".mobile-menu-inner").on('blur',function(){
   $(this).fadeOut(300);
 });
 
+
+
 //hide extrafield with info class with no value - works for Spec Sheet, Product Manual & Certifications, Catalog.
 $(document).ready(function(){
 var doc = document.querySelectorAll('.col-md-12.spec-sections > div.info').length;
@@ -18,6 +20,16 @@ for (var i = 0; i < doc; i++) {
 }
 }
 })
+
+//hide extrafield with info class-span with no value - for Material, WLL, MBL, Size and Length.
+$(document).ready(function(){
+  var len = document.querySelectorAll('.extra_field > span.info').length;
+  for (var i = 0; i < len; i++) {
+    if ( $('.extra_field > span.info')[i].innerHTML == "") {
+      $('.extra_field > span.info').eq(i).parent().hide();
+  }
+  }
+  })
 
 //hide extrafield - Description with item class with no value
 
@@ -87,7 +99,7 @@ function resizeMenu(){
 $("#read-more").click(function() {
   $([document.documentElement, document.body]).animate({
       scrollTop: $("#extended-description").offset().top -120
-  }, 2000);
+  }, 1000);
 });
 
 $(".sticky-qty").click(function() {

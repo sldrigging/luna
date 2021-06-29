@@ -14,10 +14,8 @@
 html,body {
     height: 100%;
     font-size: 16px;
-    /* max-width: 100%;
-    overflow-x: hidden; */
-}
 
+}
 body {
     display: flex;
     height: 100%;
@@ -1684,9 +1682,7 @@ del.original-price {
 }
 
 .home-page-content .category-header h3 {
-    text-align: center;
     color: #404242;
-    font-size: 32px;
     line-height: 1.35;
     font-weight: 400;
     text-transform: uppercase;
@@ -1912,8 +1908,7 @@ del.original-price {
         position: absolute;
         right: 0;
         left: 0;
-        max-height: 55%;
-        
+        /* max-height: 55%; */        
     }
 
     .products-section h2,.home-page-content .category-header h3 {
@@ -2173,7 +2168,7 @@ del.original-price {
 }
 
 .page_header {
-    margin: 0 0 30px
+    margin: 0px;
 }
 
 .page_heading,.page_headers {
@@ -2224,7 +2219,7 @@ del.original-price {
 .scrollToTop {
     position: fixed;
     bottom: 0%;
-    right: 5px;
+    right: 20px;
     display: none;
     z-index: 999;
     text-align: center;

@@ -40,7 +40,7 @@
 </div>
 <div class="col-sm-2 sticky-qty-label" style="margin-top: 1.5%; display: flex; justify-content: flex-end; align-items: center;">  
     <!--START: qtybox-->
-    <label>[product_quantity]</label>
+    <label id="qty">[product_quantity]</label>
     <label class="qty-input">
         <p class="form-control sticky-qty" style="width: 50%;">1</p>
         
@@ -614,6 +614,13 @@
                 <div class="col-md-7">
                     <!--nm manufacturer logo-->
                     <a id="logo-link">  <img id="manufacturer-logo" src="[manufacturer_logo]" /></a> 
+                    <script> 
+                        /* script to hide logo link if empty*/ 
+                        var logoName = document.getElementById("manufacturer-logo").getAttribute("src").toString();                      
+                        var manufID = logoName.replace(/\D/g,'');                        
+                        var manuLink = "search_groups.asp?manf=" + manufID;                       
+                        document.getElementById("logo-link").setAttribute("href", manuLink);  
+                    </script>
                     <div class="product-details">
                         <!--START: dailydeal-->
                         <div class="clearfix product-dd">
@@ -843,7 +850,7 @@
                             </div>
                             <!-- HTML to write -->
                             <div id="product_availability-timer" style="padding-top: 10px">
-                            <div id="ups-pickup-date" style="display: none"></div>
+                            <div id="ups-pickup-date" style="display: none;"></div>
                             <span
                                 id="cutoff-day"
                                 style="font-size: 18px; color: #00be00; font-weight: 900"
@@ -1421,7 +1428,7 @@
                             <!--START: extra_field_4 Size-->
                             <div class="extra_field">
                                 <strong>[product_extrafield4]</strong>
-                                <span class="info">[extra_field_4]</span>
+                                <span class="info size">[extra_field_4]</span>
                             </div>
                             <!--END: extra_field_4-->
                             <!--START: extra_field_5 Length-->
@@ -1462,7 +1469,7 @@
                 <div class="info">[extra_field_7]</div>
             </div>
 
-            <!--  extra_field_9 Catalog -->
+            <!--  extra_field_9 Product Family Specifications -->
             <div class="col-md-12" style="padding: 0;">
             <!-- <p class="spec-title">[product_extrafield9]</p>           -->
             <div class="info">[extra_field_9]</div>
@@ -1470,16 +1477,16 @@
 
             <!-- Description -->
             <div class="col-md-12 spec-sections" id="extended-description" style="padding: 0;">                
-                <p class="spec-title">[product_Header-description]</p>  
-                <div class="col-md-12">      
-                <div class="item" itemprop="description">[extended_description]</div>
+                <p class="spec-title">[product_Header-description]</p>                      
+                <div class="item" itemprop="description">
+                    <div class="col-md-12" > [extended_description]</div>
                 </div>
             </div>
 
             <!--  extra_field_7 product Manual & Certifications -->
             <div class="col-md-12 spec-sections" style="display: block; padding: 0;">
                 <p class="spec-title">[product_extrafield8]</p>          
-                <div class="info">[extra_field_8]</div>
+                <div class="info" style="margin: 0 25px;">[extra_field_8]</div>
             </div>
             
                 
@@ -2050,6 +2057,47 @@
 </section>
 <!--END: browsing_history-->
 
+<!--Start: script to style cut chain page --> 
+
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+    <script>
+    var chainTitle = document.getElementsByClassName('page_headers')[0].innerHTML; 
+    var searchCut = chainTitle.search("Cut Charge for Chain");
+ 
+        if(searchCut === 0) {
+            console.log('hello');
+            // $(".qty-input").hide(); //hides quantity
+            // $(".qtybox-addcart").find("label").hide(); //hides label for QTY            
+            // $(".qaLink").hide(); //hide As a Question
+            // $("#product_availability-timer").hide(); //hide Ships today/tomorrow
+            // $("#availabilityInfo").hide(); //hide Availability
+            // $("div.special-actions.text-center").hide(); //hides add review, waiting list
+            // $(".extrafieldsBlock").hide();
+            // $(".spec-sections").hide();
+
+            document.getElementsByClassName("qty-input")[1].style.display="none";
+            document.getElementsByClassName("qaLink")[0].style.display="none";
+            document.getElementsByClassName("availabilityInfo")[0].style.display="none";
+            document.getElementById("qty").style.display="none";
+            
+            
+
+           
+            // $(".cart-div").removeClass("col-xs-12 col-lg-2");  
+            // $(".cart-div").addClass("row");
+            // $("#load-wrapper").removeAttr('id'); 
+            // $(".product-cart-div").css({"background": "none", "box-shadow": "none", "margin-left": "60%"});
+//			 document.getElementsByClassName("product-cart-div")[0].style.position = "static"; 
+        //     $("div#accordion.panel-group").css("display","none");
+        //     $("div#listing-page-section-2.row").css("display","none");
+        //     $("div.product-cart-div").css("position","unset");
+        }
+    
+        
+</script> 
+
+<!--END: script to style cut chain page --> 
+
 <!--START: requestsampleform-->
 <form id="frmSampleAdd" name="frmSampleAdd" method="post" action="add_cart.asp?item_id=[catalogid]&quick=1&action=requestSample">
     <input type="hidden" name="item_id" value="[catalogid]" />
@@ -2095,6 +2143,7 @@
 
 <!--START: customScripts-->
 <script src="/assets/templates/luna-core/js/OrderShipBy.js"></script>
+<script src="/assets/templates/luna-core/js/apiTestScript.js"></script>
 <script  type="text/javascript"  src="/assets/templates/luna-core/js/lib/luxon.min.js"></script>
 <script  type="text/javascript"  src="/assets/templates/luna-core/js/luna.js"></script>
 <script src="/assets/templates/luna-core/js/content-data.js"></script>
@@ -2200,7 +2249,7 @@ function LoadMore()
     ReviewSortingChange(0, intOffSetNext);
     }
 
-<!--START: previouslybought_scripts-->
+    // <!-- START: previouslybought_scripts -->
 function checkPrevPurch(userId, caId) {
         
 		jQuery.ajax({
@@ -2223,7 +2272,7 @@ function checkPrevPurch(userId, caId) {
 
 		});
     }
-<!--END: previouslybought_scripts-->
+// <!--END: previouslybought_scripts-->
 // END: DFN-31
 </script>
 <!--END: template_scripts-->
